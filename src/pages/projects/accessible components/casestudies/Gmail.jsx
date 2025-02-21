@@ -2,7 +2,7 @@ const Gmail = {
   title: "Gmail",
   mouseImages: [
     {
-      src: "/src/pages/projects/accessible components/images/GmailDefault.png",
+      src: "/images/GmailDefault.png",
       alt: "Gmail Default State",
       description: "Gmail Default State.",
     },
