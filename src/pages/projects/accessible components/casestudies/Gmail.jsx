@@ -7,22 +7,22 @@ const Gmail = {
       description: "Gmail Default State.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailMouseHover.png",
+      src: "/images/GmailMouseHover.png",
       alt: "Checkbox on hover",
       description: "Checkbox on hover.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailMouseClick.png",
+      src: "/images/GmailMouseClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailSelectAllMouseHover.png",
+      src: "/images/GmailSelectAllMouseHover.png",
       alt: "Select-all checkbox on hover",
       description: "Select-all checkbox on hover.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailSelectAllMouseClick.png",
+      src: "/images/GmailSelectAllMouseClick.png",
       alt: "Select-all checkbox on click",
       description: "Select-all checkbox on click.",
     },
@@ -30,12 +30,12 @@ const Gmail = {
   ],
   keyboardImages: [
     {
-      src: "/src/pages/projects/accessible components/images/GmailKeyboardHover.png",
+      src: "/images/GmailKeyboardHover.png",
       alt: "Select-all checkbox on hover",
       description: "Select-all checkbox on hover.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailKeyboardClick.png",
+      src: "/images/GmailKeyboardClick.png",
       alt: "Select-all checkbox on click",
       description: "Select-all checkbox on click.",
     },
@@ -43,17 +43,17 @@ const Gmail = {
   ],
   mobileImages: [
     {
-      src: "/src/pages/projects/accessible components/images/GmailMobileDefault.png",
+      src: "/images/GmailMobileDefault.png",
       alt: "Select-all checkbox on click",
       description: "Gmail Default State.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailMobileClick.png",
+      src: "/images/GmailMobileClick.png",
       alt: "Select-all checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/src/pages/projects/accessible components/images/GmailMobileSelectAll.png",
+      src: "/images/GmailMobileSelectAll.png",
       alt: "Select-all checkbox on click",
       description: "Select-all checkbox on click.",
     },
