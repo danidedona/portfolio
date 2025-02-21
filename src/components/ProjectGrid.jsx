@@ -8,14 +8,8 @@ export default function ProjectGrid() {
   const projects = [
     {
       id: "AccessibleComponents",
-      title: "Project 1",
-      img: "/images/vite.svg",
-      category: "Web Design",
-    },
-    {
-      id: 2,
-      title: "Project Two",
-      img: "/images/react.svg",
+      title: "Accessible Components",
+      img: "/images/OriginalKeyboardUser.png",
       category: "Web Design",
     },
   ];

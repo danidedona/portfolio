@@ -30,7 +30,8 @@ function HomePage() {
             </a>
           </h1>
           <p className="mt-4 text-lg text-gray-200">
-            Lorem ipsum dolor magna phasellus.
+            This will look better soon i promise ;-; for now please click on the
+            project :D
           </p>
         </div>
       </section>
