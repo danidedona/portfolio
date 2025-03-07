@@ -2,22 +2,22 @@ const Notion = {
   title: "Notion",
   mouseImages: [
     {
-      src: "/images/NotionDefault.png",
+      src: "/images/accessible components/NotionDefault.png",
       alt: "Notion Default State",
       description: "Notion Default State.",
     },
     {
-      src: "/images/NotionMouseHover.png",
+      src: "/images/accessible components/NotionMouseHover.png",
       alt: "Checkbox on hover",
       description: "Checkbox on hover.",
     },
     {
-      src: "/images/NotionMouseClick.png",
+      src: "/images/accessible components/NotionMouseClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/images/NotionMouseHoverAfterClick.png",
+      src: "/images/accessible components/NotionMouseHoverAfterClick.png",
       alt: "Checkbox hovered after being clicked",
       description: "Checkbox hovered after being clicked.",
     },
@@ -26,12 +26,12 @@ const Notion = {
   ],
   keyboardImages: [
     {
-      src: "/images/NotionKeyboardHover.png",
+      src: "/images/accessible components/NotionKeyboardHover.png",
       alt: "Checkbox on hover",
       description: "Checkbox on hover.",
     },
     {
-      src: "/images/NotionKeyboardClick.png",
+      src: "/images/accessible components/NotionKeyboardClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
@@ -40,12 +40,12 @@ const Notion = {
   ],
   mobileImages: [
     {
-      src: "/images/NotionMobileDefault.png",
+      src: "/images/accessible components/NotionMobileDefault.png",
       alt: "Mobile Default State",
       description: "Mobile Default State.",
     },
     {
-      src: "/images/NotionMobileClick.png",
+      src: "/images/accessible components/NotionMobileClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },

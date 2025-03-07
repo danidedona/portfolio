@@ -26,11 +26,11 @@ const topics = [
 ];
 
 const carouselImages = [
-  "/images/ModifiedKeyboardUser.png",
-  "/images/ModifiedMobileUser.png",
-  "/images/ModifiedMouseUser.png",
-  "/images/OriginalKeyboardUser.png",
-  "/images/OriginalMouseUser.png",
+  "/images/accessible components/ModifiedKeyboardUser.png",
+  "/images/accessible components/ModifiedMobileUser.png",
+  "/images/accessible components/ModifiedMouseUser.png",
+  "/images/accessible components/OriginalKeyboardUser.png",
+  "/images/accessible components/OriginalMouseUser.png",
 ];
 
 const caseStudies = [Gmail, GoogleForms, Notion];
@@ -68,16 +68,6 @@ const AccessibleComponents = () => {
 
     return () => clearInterval(topicInterval);
   }, []);
-
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % carouselImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage(
-      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length
-    );
-  };
 
   const scrollToProcess = () => {
     processRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -630,11 +620,13 @@ const AccessibleComponents = () => {
                   <div
                     className="overflow-hidden rounded-lg cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/OriginalMouseUser.png")
+                      setSelectedImage(
+                        "/images/accessible components/OriginalMouseUser.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/OriginalMouseUser.png"
+                      src="/images/accessible components/OriginalMouseUser.png"
                       alt="Original Mouse State Model"
                       className="w-full h-auto rounded-lg transform transition-transform duration-300 hover:scale-105"
                     />
@@ -647,11 +639,13 @@ const AccessibleComponents = () => {
                   <div
                     className="overflow-hidden rounded-lg cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/OriginalKeyboardUser.png")
+                      setSelectedImage(
+                        "/images/accessible components/OriginalKeyboardUser.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/OriginalKeyboardUser.png"
+                      src="/images/accessible components/OriginalKeyboardUser.png"
                       alt="Original Keyboard State Model"
                       className="w-full h-auto rounded-lg transform transition-transform duration-300 hover:scale-105"
                     />
@@ -771,11 +765,13 @@ const AccessibleComponents = () => {
                 <div
                   className="w-2/3 cursor-pointer"
                   onClick={() =>
-                    setSelectedImage("/images/ModifiedMouseUser.png")
+                    setSelectedImage(
+                      "/images/accessible components/ModifiedMouseUser.png"
+                    )
                   }
                 >
                   <img
-                    src="/images/ModifiedMouseUser.png"
+                    src="/images/accessible components/ModifiedMouseUser.png"
                     alt="Redesigned Mouse/Trackpad Interaction Model"
                     className="w-full transform transition-transform duration-300 hover:scale-105"
                   />
@@ -815,11 +811,13 @@ const AccessibleComponents = () => {
                 <div
                   className="w-2/3 cursor-pointer"
                   onClick={() =>
-                    setSelectedImage("/images/ModifiedKeyboardUser.png")
+                    setSelectedImage(
+                      "/images/accessible components/ModifiedKeyboardUser.png"
+                    )
                   }
                 >
                   <img
-                    src="/images/ModifiedKeyboardUser.png"
+                    src="/images/accessible components/ModifiedKeyboardUser.png"
                     alt="Redesigned Keyboard Interaction Model"
                     className="w-full transform transition-transform duration-300 hover:scale-105"
                   />
@@ -851,11 +849,13 @@ const AccessibleComponents = () => {
                 <div
                   className="w-2/3 cursor-pointer"
                   onClick={() =>
-                    setSelectedImage("/images/ModifiedMobileUser.png")
+                    setSelectedImage(
+                      "/images/accessible components/ModifiedMobileUser.png"
+                    )
                   }
                 >
                   <img
-                    src="/images/ModifiedMobileUser.png"
+                    src="/images/accessible components/ModifiedMobileUser.png"
                     alt="Redesigned Mobile Interaction Model"
                     className="w-full transform transition-transform duration-300 hover:scale-105"
                   />
@@ -873,10 +873,14 @@ const AccessibleComponents = () => {
               <div className="flex flex-col md:flex-row items-center mb-16">
                 <div
                   className="w-full md:w-1/2 cursor-pointer"
-                  onClick={() => setSelectedImage("/images/OriginalDesign.png")}
+                  onClick={() =>
+                    setSelectedImage(
+                      "/images/accessible components/OriginalDesign.png"
+                    )
+                  }
                 >
                   <img
-                    src="/images/OriginalDesign.png"
+                    src="/images/accessible components/OriginalDesign.png"
                     alt="Original Mobile Interaction Model"
                     className="w-full rounded-lg transform transition-transform duration-300 hover:scale-105"
                   />
@@ -909,10 +913,14 @@ const AccessibleComponents = () => {
                 </div>
                 <div
                   className="md:w-1/3 order-1 md:order-2 mt-4 md:mt-0 cursor-pointer"
-                  onClick={() => setSelectedImage("/images/ModifiedDesign.png")}
+                  onClick={() =>
+                    setSelectedImage(
+                      "/images/accessible components/ModifiedDesign.png"
+                    )
+                  }
                 >
                   <img
-                    src="/images/ModifiedDesign.png"
+                    src="/images/accessible components/ModifiedDesign.png"
                     alt="Redesigned Mobile Interaction Model"
                     className="w-full rounded-lg transform transition-transform duration-300 hover:scale-105"
                   />
@@ -931,11 +939,13 @@ const AccessibleComponents = () => {
                   <div
                     className="w-2/3 cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/ModifiedDefaultState.png")
+                      setSelectedImage(
+                        "/images/accessible components/ModifiedDefaultState.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/ModifiedDefaultState.png"
+                      src="/images/accessible components/ModifiedDefaultState.png"
                       alt="Redesigned Mouse/Trackpad Interaction Model"
                       className="w-full transform transition-transform duration-300 hover:scale-105"
                     />
@@ -953,11 +963,13 @@ const AccessibleComponents = () => {
                   <div
                     className="w-2/3 cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/ModifiedHoverState.png")
+                      setSelectedImage(
+                        "/images/accessible components/ModifiedHoverState.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/ModifiedHoverState.png"
+                      src="/images/accessible components/ModifiedHoverState.png"
                       alt="Redesigned Keyboard Interaction Model"
                       className="w-full transform transition-transform duration-300 hover:scale-105"
                     />
@@ -979,11 +991,13 @@ const AccessibleComponents = () => {
                   <div
                     className="w-2/3 cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/ModifiedCheckedHoverState.png")
+                      setSelectedImage(
+                        "/images/accessible components/ModifiedCheckedHoverState.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/ModifiedCheckedHoverState.png"
+                      src="/images/accessible components/ModifiedCheckedHoverState.png"
                       alt="Redesigned Mobile Interaction Model"
                       className="w-full transform transition-transform duration-300 hover:scale-105"
                     />
@@ -1003,11 +1017,13 @@ const AccessibleComponents = () => {
                   <div
                     className="w-2/3 cursor-pointer"
                     onClick={() =>
-                      setSelectedImage("/images/ModifiedCheckedState.png")
+                      setSelectedImage(
+                        "/images/accessible components/ModifiedCheckedState.png"
+                      )
                     }
                   >
                     <img
-                      src="/images/ModifiedCheckedState.png"
+                      src="/images/accessible components/ModifiedCheckedState.png"
                       alt="Redesigned Mobile Interaction Model"
                       className="w-full transform transition-transform duration-300 hover:scale-105"
                     />

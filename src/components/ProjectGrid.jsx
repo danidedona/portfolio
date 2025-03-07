@@ -2,14 +2,19 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import AccessibleComponents from "../pages/projects/accessible components/AccessibleComponents";
 
 export default function ProjectGrid() {
   const projects = [
     {
       id: "AccessibleComponents",
       title: "Accessible Components",
-      img: "/images/OriginalKeyboardUser.png",
+      img: "/images/accessible components/OriginalKeyboardUser.png",
+      category: "Web Design",
+    },
+    {
+      id: "PersonasAndStoryboarding",
+      title: "Personas & Storyboarding",
+      img: "/images/personas and storyboarding/FemaleProfile.png",
       category: "Web Design",
     },
   ];

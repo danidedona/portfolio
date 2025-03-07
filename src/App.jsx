@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import AccessibleComponents from "./pages/projects/accessible components/AccessibleComponents";
+import PersonasAndStoryboarding from "./pages/projects/personas and storyboarding/PersonasAndStoryboarding";
 
 function App() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ paddingTop: "var(--navbar-height)" }}>
+    <div class="font-sans" style={{ paddingTop: "var(--navbar-height)" }}>
       <nav id="nav">
         <Navbar />
       </nav>
@@ -28,6 +29,10 @@ function App() {
         <Route
           path="/projects/AccessibleComponents"
           element={<AccessibleComponents />}
+        />
+        <Route
+          path="/projects/PersonasAndStoryboarding"
+          element={<PersonasAndStoryboarding />}
         />
 
         <Route path="/about" element={<AboutPage />} />

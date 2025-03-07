@@ -2,27 +2,27 @@ const GoogleForms = {
   title: "Google Forms",
   mouseImages: [
     {
-      src: "/images/FormsDefault.png",
+      src: "/images/accessible components/FormsDefault.png",
       alt: "Forms Default State",
       description: "Forms Default State.",
     },
     {
-      src: "/images/FormsMouseHover.png",
+      src: "/images/accessible components/FormsMouseHover.png",
       alt: "Checkbox on hover",
       description: "Checkbox on hover.",
     },
     {
-      src: "/images/FormsMouseClick.png",
+      src: "/images/accessible components/FormsMouseClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/images/FormsMouseTextfield.png",
+      src: "/images/accessible components/FormsMouseTextfield.png",
       alt: "Checkbox with a textfield",
       description: "Checkbox with a textfield.",
     },
     {
-      src: "/images/FormsMouseRequiredPopup.png",
+      src: "/images/accessible components/FormsMouseRequiredPopup.png",
       alt: "Popup indicating a required question",
       description: "Popup indicating a required question.",
     },
@@ -31,22 +31,22 @@ const GoogleForms = {
   ],
   keyboardImages: [
     {
-      src: "/images/FormsKeyboardHover.png",
+      src: "/images/accessible components/FormsKeyboardHover.png",
       alt: "Checkbox on hover",
       description: "Checkbox on hover.",
     },
     {
-      src: "/images/FormsKeyboardClick.png",
+      src: "/images/accessible components/FormsKeyboardClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/images/FormsKeyboardTextfield.png",
+      src: "/images/accessible components/FormsKeyboardTextfield.png",
       alt: "Checkbox with a textfield",
       description: "Checkbox with a textfield.",
     },
     {
-      src: "/images/FormsKeyboardRequiredPopup.png",
+      src: "/images/accessible components/FormsKeyboardRequiredPopup.png",
       alt: "Popup indicating a required question",
       description: "Popup indicating a required question.",
     },
@@ -55,17 +55,17 @@ const GoogleForms = {
   ],
   mobileImages: [
     {
-      src: "/images/FormsMobileDefault.png",
+      src: "/images/accessible components/FormsMobileDefault.png",
       alt: "Mobile Default State",
       description: "Mobile Default State.",
     },
     {
-      src: "/images/FormsMobileClick.png",
+      src: "/images/accessible components/FormsMobileClick.png",
       alt: "Checkbox on click",
       description: "Checkbox on click.",
     },
     {
-      src: "/images/FormsMobileTextfield.png",
+      src: "/images/accessible components/FormsMobileTextfield.png",
       alt: "Checkbox with a textfield",
       description: "Checkbox with a textfield.",
     },
