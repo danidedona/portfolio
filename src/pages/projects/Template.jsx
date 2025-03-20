@@ -208,7 +208,7 @@ const Template = () => {
         <div className="w-full flex flex-row py-16 px-14 bg-opacity-70 relative">
           {/* Sidebar Navigation */}
           <div className="w-1/4">
-            <nav className="sticky top-1/2 transform -translate-y-1/2 space-y-4">
+            <nav className="sticky top-1/2 transform -translate-y-1/2">
               {sections.map(({ id, label }) => (
                 <a
                   key={id}
@@ -229,17 +229,23 @@ const Template = () => {
           <div className="w-3/4 space-y-16 pl-8">
             {/* Section 1 */}
             <section id="sec1" className="text-left">
-              <h1 className="text-3xl font-bold">First Section</h1>
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+                First Section
+              </h1>
             </section>
 
             {/* Section 2 */}
             <section id="sec2" className="text-left">
-              <h1 className="text-3xl font-bold">Second Section</h1>
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+                Second Section
+              </h1>
             </section>
 
             {/* Section 3 */}
             <section id="sec3" className="text-left">
-              <h1 className="text-3xl font-bold">Third Section</h1>
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+                Third Section
+              </h1>
             </section>
           </div>
         </div>

@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import AccessibleComponents from "./pages/projects/accessible components/AccessibleComponents";
 import PersonasAndStoryboarding from "./pages/projects/personas and storyboarding/PersonasAndStoryboarding";
+import ResponsiveRedesign from "./pages/projects/responsive redesign/ResponsiveRedesign";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,10 @@ function App() {
         <Route
           path="/projects/PersonasAndStoryboarding"
           element={<PersonasAndStoryboarding />}
+        />
+        <Route
+          path="/projects/ResponsiveRedesign"
+          element={<ResponsiveRedesign />}
         />
 
         <Route path="/about" element={<AboutPage />} />

@@ -17,6 +17,12 @@ export default function ProjectGrid() {
       img: "/images/personas and storyboarding/FemaleProfile.png",
       category: "Web Design",
     },
+    {
+      id: "ResponsiveRedesign",
+      title: "Responsive Redesign",
+      img: "/images/personas and storyboarding/FemaleProfile.png",
+      category: "Web Design",
+    },
   ];
 
   useEffect(() => {
