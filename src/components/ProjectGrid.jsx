@@ -20,7 +20,7 @@ export default function ProjectGrid() {
     {
       id: "ResponsiveRedesign",
       title: "Responsive Redesign",
-      img: "/images/personas and storyboarding/webkins-mine.png",
+      img: "/images/personas and storyboarding/webkinz-mine.png",
       category: "Web Design",
     },
   ];
