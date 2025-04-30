@@ -1,0 +1,94 @@
+
+// LM Primary Scheme
+$primary0: #0037FF; // Darker blue
+$primary1: #0076FF;
+$primary2: mix(white, $primary1, 10%);
+$primary3: mix(white, $primary1, 20%);
+$primary4: mix(white, $primary1, 30%);
+$primary5: mix(white, $primary1, 40%);
+$primary6: mix(white, $primary1, 50%);
+$primary7: mix(white, $primary1, 60%);
+$primary8: mix(white, $primary1, 70%);
+$primary9: mix(white, $primary1, 80%);
+$primary10: mix(white, $primary1, 90%);
+
+// LM Secondary Scheme
+$secondary1: #FE5A1D; //Orange
+$secondary2: #FFCC00; //Yellow
+$secondary3: #F2F4FC; //Light bluegray
+$secondary4: #1C2841; //Dark Navy Blue
+$secondary5: #81ae49; //Replaces Green
+
+// LM Grays
+$gray1: #151515;
+$gray2: mix(white, $gray1, 10%);
+$gray3: mix(white, $gray1, 20%);
+$gray4: mix(white, $gray1, 30%);
+$gray5: mix(white, $gray1, 40%);
+$gray6: mix(white, $gray1, 50%);
+$gray7: mix(white, $gray1, 60%);
+$gray8: mix(white, $gray1, 70%);
+$gray9: mix(white, $gray1, 80%);
+$gray10: mix(white, $gray1, 90%);
+
+// LM Alert Colors
+$critical: #ed1e24;
+$error: #f26522;
+$warning: #ffcc00;
+$cleared: #81ae49;
+$acknowledged: $primary1;
+$disabled: $gray7;
+$sdt: $gray4;
+
+// Misc
+$highlight: #FCF8E3;
+
+// Graph Colors - Primary
+$primary-graph-line: #eee;
+
+/* Classic Colors */
+$classic-lmblue: #56b6d9; // LM blue
+$classic-lmlightbnlue: #97d7ef; // LM Light Blue
+$classic-lmpurple: #86549c; // LM Purple
+$classic-lmpurple2: #621f71; // LM Purple 2
+$classic-green: #81ae49; // LM Green
+$classic-lmdarkgray: #333333; // LM Dark Gray
+$classic-lmlogogray: #4b4b4b; // LM Logo Gray
+$classic-lmlightgray: #afafaf; // LM Light Gray
+$classic-darkblue: #127ea5; // Dark blue
+$classic-darkpurple: #33033e; // Dark Purple
+$classic-darkgreen: #467034; // Dark Green
+
+// Classic Grays
+$classic-gray1: #151515;
+$classic-gray2: #333333;
+$classic-gray3: #5c5c5c;
+$classic-gray4: #757575;
+$classic-gray5: #959494;
+$classic-gray6: #afafaf;
+$classic-gray7: #e1e1e1;
+$classic-gray8: #f5f5f5;
+
+/* Classic Schemes Skittles */
+// Graph colors - Classic
+// Scheme - Solid Gray
+$classic-graph-line1: #009edf; //(light blue)
+$classic-graph-line2: #e1e1e0; //(light gray)
+$classic-graph-line3: #383838; //(dark gray)
+$classic-graph-line4: #5f2f69; //(purple)
+$classic-graph-line5: #df3838; //(red)
+$classic-graph-line6: #ec7d07; //(orange)
+$classic-graph-line7: #10b50c; //(bright green)
+$classic-graph-line8: #eadf11; //(yellow)
+$classic-graph-line9: #0049a0; //(blue)
+$classic-graph-line10: #9e156d; //(magenta)
+$classic-graph-line11: #794983; //(purple)(purple)
+$classic-graph-line12: #944e03; //(brown)
+$classic-graph-line13: #d8c01f; //(yellow)(yellow)
+$classic-graph-line14: #2f69ae; //(blue)(blue)
+$classic-graph-line15: #9cc416; //(green)
+$classic-graph-line16: #2ecf2a; //(bright green)(bright green)
+$classic-graph-line17: #39abd7; //(bright blue)
+$classic-graph-line18: #7f7f7f; //(gray)
+$classic-graph-line19: #ffffff; //(white)
+$classic-graph-line20: #b55693; //(magenta)(magenta)

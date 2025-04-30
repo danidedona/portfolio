@@ -3,7 +3,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        silkscreen: ['"Silkscreen"', "monospace"],
+        wix: ['"Wix Madefor Text"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

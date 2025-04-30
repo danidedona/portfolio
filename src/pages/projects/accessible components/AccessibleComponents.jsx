@@ -128,7 +128,7 @@ const AccessibleComponents = () => {
           <div className="w-full mt-6">
             <button
               onClick={scrollToProcess}
-              className="w-full border-2 border-black text-black text-2xl font-semibold px-8 py-3 transition duration-300 hover:bg-[#E4EFFA] hover:text-[#2483E2] hover:mix-blend-difference"
+              className="w-full border-2 border-black text-black text-2xl font-semibold px-8 py-3 transition duration-300 hover:bg-[#E4EFFA]"
             >
               See the process
             </button>
