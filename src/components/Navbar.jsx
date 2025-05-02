@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const colors = {
@@ -30,23 +30,15 @@ export default function Navbar() {
 
   const navLinks = (
     <>
-      <a href="/" className={linkClass("/")}>
-        Work
-      </a>
-      <a href="/about" className={linkClass("/about")}>
-        About
-      </a>
-      {/* <a href="/ideas" className={linkClass("/ideas")}>
-        Ideas
-      </a> */}
-      <a
-        href="https://drive.google.com/file/d/1mJU6puezVxKsrLDR0v6mqR2SRt5HKWTU/view?usp=sharing"
+      <Link to="/">Work</Link>
+      <Link to="/about">About</Link>
+      <Link
+        to="https://drive.google.com/..."
         target="_blank"
         rel="noopener noreferrer"
-        className={linkClass("/resume")}
       >
         Resume
-      </a>
+      </Link>
     </>
   );
 
