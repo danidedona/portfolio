@@ -54,38 +54,43 @@ const Notion = {
   ],
   firstChartRow1: {
     left: "Mouse / Touchpad",
-    right: ["Simple yet effective", "Animation on click adding complexity"],
+    right: [
+      "Clean and minimal interaction",
+      "Click triggers animation for feedback",
+    ],
   },
   firstChartRow2: {
     left: "Keyboard",
     right: [
-      "Very accessible through tab and enter",
-      "No animation when using keyboard controls",
+      "Fully accessible via tab and enter",
+      "No animation on keyboard toggle",
     ],
   },
   firstChartRow3: {
     left: "Touch",
-    right: ["Same look and functionality on mobile"],
+    right: [
+      "Same appearance and behavior as desktop",
+      "Responsive and easy to tap",
+    ],
   },
+
   secondChartRow1: {
     left: "Mouse / Touchpad",
     right: [
-      "Hover: A grey box (shadow) surrounds the checkbox field indicating the hovered area",
-      "Click: The box turns blue",
-      "Click: A check appears in the box",
-      "Click: The shadow disappears",
+      "Hover shows grey shadow; click turns box blue",
+      "Checkmark appears, shadow fades out",
     ],
   },
   secondChartRow2: {
     left: "Keyboard",
     right: [
-      "Focus order makes complete sense as you move from property to property",
-      "Voiceover checkbox: “unchecked, checkbox, button, group”",
+      "Logical focus order across fields",
+      "Screen reader clearly announces checkbox state",
     ],
   },
   secondChartRow3: {
     left: "Touch",
-    right: ["Click: The box turns blue", "Click: A check appears in the box"],
+    right: ["Tap turns box blue", "Checkmark appears inside the box"],
   },
 };
 

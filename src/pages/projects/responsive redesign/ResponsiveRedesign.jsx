@@ -53,7 +53,7 @@ const sections = [
 ];
 
 // Topics are used for fluid word list animation
-const topics = ["webpage", "problems", "style", "mocks", "redesign", "rah"];
+const topics = ["webpage", "problems", "style", "mocks", "redesign"];
 
 const ResponsiveRedesign = () => {
   //////////////////////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ const ResponsiveRedesign = () => {
         "--color-dark": colors.dark,
         "--color-text": colors.text,
       }}
-      className="w-full text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
+      className="w-full font-wix text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
     >
       {/* Fullscreen Image Modal */}
       {selectedImage && (
@@ -183,83 +183,47 @@ const ResponsiveRedesign = () => {
         </div>
       </section>
 
-      {/* Project Description */}
+      {/* Overview Section */}
       <section className="w-full flex flex-row py-16 px-14 bg-[var(--color-light)]">
         {/* Left Side (3/4) */}
         <div className="w-3/4 text-left">
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-4xl font-bold mb-2 text-[var(--color-dark)]">
             Redesigning the Webkinz Website
           </h2>
-          <p className="mt-8 mb-4">
-            Webkinz was a huge part of many people's childhoods, but its website
-            has struggled to keep up with modern usability and accessibility
-            standards. The interface is cluttered, unintuitive for new users,
-            and lacks clear structure or guidance. For users unfamiliar with
-            Webkinz, the chaotic layout and dated design present major barriers
-            to entry. For returning users, the disorganized navigation and slow
-            load times make the experience frustrating.
+          <p className="text-xl mb-8">
+            Modernizing the Webkinz homepage with a cleaner, more accessible
+            layout based on usability heuristics and accessibility audits.
           </p>
 
-          <p className="my-4">
-            In this project, I analyzed the Webkinz homepage using established
-            usability principles— efficiency, learnability, memorability—and
-            accessibility tools like WebAIM WAVE. I identified major issues
-            including overwhelming visuals, lack of clear sign-in instructions,
-            low-contrast text, and missing alt text on key images. Using this
-            analysis, I created a clean, modern, and responsive redesign to
-            improve navigation, accessibility, and overall user experience
-            across devices.
+          <p className="mb-4">
+            I analyzed the original Webkinz homepage using usability principles
+            and tools like WebAIM WAVE. After identifying key issues—cluttered
+            visuals, poor contrast, and confusing navigation—I created a
+            redesigned version that improves structure, accessibility, and
+            responsiveness across devices.
           </p>
         </div>
 
         {/* Right Side (1/4) */}
-        <div className="w-1/4 text-left pl-8">
-          <h3 className="text-2xl font-bold">Contribution</h3>
-          <p>
-            Research, Branding, UX/UI Design, Prototypes, Website Development,
-            Accessible UI Components
-          </p>
-          <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
-          <p>2 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">Research References</h3>
-          <ul className="list-disc list-inside">
-            <li>
-              <a
-                href="https://wave.webaim.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                WebAIM WAVE Accessibility Tool
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://uxdesign.cc/ten-usability-heuristics-applied-on-websites-13b00868f8f5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Usability Heuristics Overview
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.figma.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Figma (Prototyping Tool)
-              </a>
-            </li>
-          </ul>
+        <div className="w-1/4 text-left pl-8 space-y-4">
+          <div>
+            <h3 className="text-xl font-bold">Role</h3>
+            <p>UX Designer, Frontend Developer</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Duration</h3>
+            <p>2 Weeks, Spring 2025</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Tools</h3>
+            <p>Figma, WebAIM WAVE, Chrome DevTools</p>
+          </div>
         </div>
       </section>
 
       {/* Main Scroll Section */}
       <section ref={processRef}>
-        <h2 className="text-3xl py-16 px-14 text-left font-bold">
+        <h2 className="text-3xl py-16 px-14 text-left font-bold mb-4">
           Responsive Redesign
         </h2>
         <div className="w-full flex flex-row py-16 px-14 bg-opacity-70 relative">
@@ -283,22 +247,19 @@ const ResponsiveRedesign = () => {
           </div>
 
           {/* Main Content */}
-          <div className="w-3/4 space-y-16 pl-8">
+          <div className="w-3/4 space-y-4 pl-8">
             {/* Picking a Webpage */}
-            <section id="webpage" className="text-left">
+            <section id="webpage" className="text-left mb-16">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Picking a Webpage
               </h1>
               <p className="mt-4">
-                For this project, I chose to redesign the Webkinz homepage.
-                Webkinz, a virtual pet website that was popular in the early
-                2000s, has a nostalgic appeal for many who grew up with it.
-                However, the current website suffers from outdated design
-                choices and usability issues, particularly for new users
-                unfamiliar with the site.
+                I chose to redesign the Webkinz homepage to modernize its layout
+                and improve usability, especially for new users unfamiliar with
+                the nostalgic early-2000s virtual pet site.
               </p>
               <div
-                className="w-2/3 mx-auto flex justify-center items-center cursor-pointer"
+                className="w-2/3 mx-auto flex justify-center items-center cursor-pointer m-4"
                 onClick={() =>
                   setSelectedImage("/images/responsive redesign/webkinz-og.jpg")
                 }
@@ -310,20 +271,12 @@ const ResponsiveRedesign = () => {
                 />
               </div>
               <p className="mt-6">
-                The decision to choose Webkinz stemmed from a personal
-                connection to the platform, but also due to the opportunity to
-                modernize its design while making it more user-friendly. The
-                interface is cluttered with many bright colors, difficult
-                navigation, and slow-loading Flash elements that hinder overall
-                efficiency. Additionally, the website lacks clear guidance for
-                new users and could benefit from improved accessibility and a
-                more cohesive design.
-              </p>
-              <p className="mt-4">
-                In the following sections, I will outline the usability and
-                accessibility issues identified, followed by my redesign
-                approach that addresses these concerns, making the website more
-                user-friendly, accessible, and visually appealing.
+                I chose Webkinz for its nostalgic value and the clear
+                opportunity to improve its cluttered, outdated design. The site
+                suffers from poor navigation, accessibility gaps, and lacks
+                guidance for new users. This case study outlines the key issues
+                I identified and how my redesign improves usability, clarity,
+                and visual cohesion.
               </p>
             </section>
 
@@ -333,15 +286,14 @@ const ResponsiveRedesign = () => {
                 Finding Problems
               </h1>
               <p className="mt-4">
-                The decision to redesign Webkinz stemmed from both personal
-                nostalgia and the need to address several usability concerns.
-                While the website holds sentimental value for those who grew up
-                with it, its current design can be confusing and inaccessible,
-                particularly for new users unfamiliar with the platform.
-              </p>
-              <p className="mt-4">
-                Below is a breakdown of the key usability problems identified,
-                categorized by key criteria:
+                I chose to redesign Webkinz to combine personal nostalgia with
+                the chance to fix
+                <span className="font-semibold text-[var(--color-primary)]">
+                  {" "}
+                  major usability issues
+                </span>
+                . Its current design is cluttered and confusing, especially for
+                new users.
               </p>
 
               <div className="mt-4">
@@ -398,14 +350,14 @@ const ResponsiveRedesign = () => {
                   placeholder text ("..."), which doesn't aid screen reader
                   users.
                 </li>
-                <li>
+                <li className="mb-4">
                   <strong>Low Contrast Errors:</strong> 17 instances of low
                   contrast, especially with light blue text on white
                   backgrounds, making content difficult to read for users with
                   visual impairments.
                 </li>
                 <div
-                  className="w-2/3 mx-auto flex justify-center items-center cursor-pointer"
+                  className="w-2/3 mx-auto flex justify-center items-center cursor-pointer mb-16"
                   onClick={() =>
                     setSelectedImage("/images/responsive redesign/contrast.png")
                   }
@@ -425,22 +377,33 @@ const ResponsiveRedesign = () => {
                 Visual Design Style Guide
               </h1>
               <p className="mt-4">
-                For the redesign of Webkinz, I used colors from the original
-                website to maintain a sense of nostalgia, but aimed to create a
-                more cohesive and professional experience. The design is still
-                playful and vibrant to stay kid-friendly, but it incorporates
-                modern UI elements to improve usability.
+                For the Webkinz redesign, I kept the original color palette to
+                preserve nostalgia, while updating the interface to feel more{" "}
+                <span className="font-semibold text-[var(--color-primary)]">
+                  cohesive
+                </span>{" "}
+                and{" "}
+                <span className="font-semibold text-[var(--color-primary)]">
+                  user-friendly
+                </span>
+                . The design stays playful and kid-friendly, but incorporates
+                modern UI patterns for improved{" "}
+                <span className="font-semibold text-[var(--color-primary)]">
+                  usability
+                </span>
+                .
               </p>
               <p className="mt-4">
-                The visual design style guide includes key elements to ensure
-                consistency across the website. I focused on a color palette
-                that keeps the playful theme while introducing a cleaner, more
-                professional look. Buttons are designed with different variants
-                for hovering and clicking, fonts are playful yet readable, and
-                logos are consistent with the brand.
+                The{" "}
+                <span className="font-semibold text-[var(--color-primary)]">
+                  style guide
+                </span>{" "}
+                includes key elements to ensure consistency—like hover and
+                click-ready buttons, readable yet playful fonts, and updated
+                logos aligned with the brand.
               </p>
               <p className="mt-4">
-                Below are the main sections of my style guide:
+                Below are the main sections of the style guide:
               </p>
 
               <div className="mt-4 mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -596,7 +559,7 @@ const ResponsiveRedesign = () => {
                   </div>
 
                   {/* Phone */}
-                  <div>
+                  <div className="mb-16">
                     <h3 className="text-2xl font-bold mb-2 text-[var(--color-darkp)]">
                       Mobile Mockup
                     </h3>
@@ -615,35 +578,21 @@ const ResponsiveRedesign = () => {
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Responsive Redesign
               </h1>
-              <p className="mt-4">
-                In this section, I present a comparison between the original
-                Webkinz website and the redesigned version. The goal of the
-                redesign is to make the website more responsive, user-friendly,
-                and visually appealing across different devices. In Part 1, I
-                identified key usability issues such as confusing navigation,
-                cluttered layouts, and poor performance, as well as
-                accessibility concerns like low color contrast and missing
-                descriptive text. The redesigned version directly addresses
-                these problems to create a more inclusive, intuitive, and
-                seamless experience for all users.
-              </p>
 
               <div className="w-full flex justify-center gap-8 mt-8">
                 {/* Original Webkinz Column */}
-                <div className="w-1/2 flex flex-col justify-center items-center p-4">
-                  <h2 className="text-2xl font-bold mb-4 text-center">
+                <div className="w-1/2 flex flex-col p-4">
+                  <h2 className="text-2xl font-bold mb-4 text-left">
                     Old Webkinz Website
                   </h2>
-                  <p className="mb-4 text-center max-w-md">
-                    The original Webkinz website served as the starting point
-                    for my redesign. It faced multiple usability challenges
-                    including unclear navigation menus, inconsistent visual
-                    hierarchy, and non-responsive design that hindered mobile
-                    and tablet users. Accessibility issues such as poor color
-                    contrast and lack of alt text made it difficult for users
-                    with visual impairments or assistive technologies to
-                    navigate.
-                  </p>
+                  <ul className="list-disc list-inside text-left space-y-2 mb-4">
+                    <li>Unclear navigation menus</li>
+                    <li>Inconsistent visual hierarchy</li>
+                    <li>Non-responsive layout for mobile and tablet users</li>
+                    <li>Poor color contrast and missing alt text</li>
+                    <li>Limited accessibility for assistive tech users</li>
+                  </ul>
+
                   <div
                     className="w-full flex justify-center items-center cursor-pointer mb-4"
                     onClick={() =>
@@ -671,21 +620,19 @@ const ResponsiveRedesign = () => {
                 </div>
 
                 {/* Redesigned Webkinz Column */}
-                <div className="w-1/2 flex flex-col justify-center items-center p-4">
-                  <h2 className="text-2xl font-bold mb-4 text-center">
+                <div className="w-1/2 flex flex-col p-4">
+                  <h2 className="text-2xl font-bold mb-4 text-left">
                     Redesigned Webkinz Website
                   </h2>
-                  <p className="mb-4 text-center max-w-md">
-                    The redesigned Webkinz website improves both usability and
-                    accessibility. It features a clean, modern layout with
-                    intuitive navigation, optimized for desktops, tablets, and
-                    mobile devices. The visual hierarchy has been clarified to
-                    help users find information more easily. Accessibility
-                    enhancements include improved color contrast, consistent
-                    heading structures, descriptive alt text for images, and
-                    responsive elements that adapt fluidly to assistive
-                    technologies.
-                  </p>
+                  <ul className="list-disc list-inside text-left space-y-2 mb-4">
+                    <li>Clean, modern layout with intuitive navigation</li>
+                    <li>Responsive design for desktop, tablet, and mobile</li>
+                    <li>Improved visual hierarchy for easier scanning</li>
+                    <li>
+                      Better color contrast and consistent heading structure
+                    </li>
+                    <li>Descriptive alt text and support for assistive tech</li>
+                  </ul>
                   <div
                     className="w-full flex justify-center items-center cursor-pointer mb-4"
                     onClick={() =>
@@ -714,55 +661,69 @@ const ResponsiveRedesign = () => {
               </div>
 
               <h2 className="text-2xl font-bold mt-8">Key Improvements</h2>
-              <ul className="list-disc pl-6 mt-4">
+              <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>
-                  Improved <strong>responsiveness</strong> for different screen
-                  sizes, making the site fully functional across desktops,
-                  tablets, and mobile devices.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Responsive design
+                  </span>{" "}
+                  across desktop, tablet, and mobile.
                 </li>
                 <li>
-                  Streamlined <strong>navigation structure</strong> to reduce
-                  confusion and improve usability, addressing issues identified
-                  in the original site.
+                  Simplified{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    navigation
+                  </span>{" "}
+                  for better usability.
                 </li>
                 <li>
-                  Enhanced <strong>visual hierarchy and readability</strong>{" "}
-                  with cohesive color schemes, larger buttons, and modern fonts.
+                  Clearer{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    visual hierarchy
+                  </span>{" "}
+                  with modern fonts and larger buttons.
                 </li>
                 <li>
-                  Optimized <strong>performance</strong>, reducing load times
-                  and eliminating unnecessary clutter for smoother user
-                  experience.
+                  Improved{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    performance
+                  </span>{" "}
+                  and faster load times.
                 </li>
                 <li>
-                  Significant <strong>accessibility improvements</strong>,
-                  including better color contrast, properly structured headings,
-                  and descriptive alt text for all images, making the site
-                  easier to use for individuals relying on screen readers or
-                  with visual impairments.
+                  Better{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    accessibility
+                  </span>
+                  : contrast, headings, and alt text.
                 </li>
               </ul>
 
               <h2 className="text-2xl font-bold mt-8">Future Enhancements</h2>
-              <p>
-                While the redesigned website is a significant improvement, there
-                are still opportunities to further enhance the user experience
-                and accessibility. Future updates may include:
+              <p className="mt-2">
+                While the redesign improves usability, there are still areas to
+                build on:
               </p>
-              <ul className="list-disc pl-6 mt-4">
+              <ul className="list-disc pl-6 mt-4 space-y-2 mb-16">
                 <li>
-                  Adding additional interactive features and animations while
-                  ensuring they are accessible and do not interfere with
-                  usability.
+                  Add{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    interactive features
+                  </span>{" "}
+                  and animations that stay accessible.
                 </li>
                 <li>
-                  Improving content organization for easier navigation,
-                  especially for younger users and users with cognitive
-                  disabilities.
+                  Improve{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    content structure
+                  </span>{" "}
+                  for younger and neurodiverse users.
                 </li>
                 <li>
-                  Further optimizing performance for mobile devices and
-                  low-bandwidth scenarios.
+                  Further enhance{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    mobile performance
+                  </span>{" "}
+                  for slower connections.
                 </li>
               </ul>
             </section>
@@ -773,97 +734,68 @@ const ResponsiveRedesign = () => {
                 Takeaways
               </h1>
               <p className="mt-4">
-                This project was a valuable learning experience, especially as
-                it was my first time creating a mobile-responsive design. I
-                learned a lot about the intricacies of designing for multiple
-                screen sizes, ensuring that a website is not only visually
-                appealing but also functional and user-friendly on desktops,
-                tablets, and phones. Here are some of the key takeaways:
+                This was my first time designing a fully responsive website. I
+                learned how to adapt layouts across screen sizes while
+                maintaining both visual appeal and usability. Here are my
+                biggest takeaways:
               </p>
 
               <h2 className="text-2xl font-bold mt-4">What I Learned</h2>
-              <ul className="list-disc pl-6 mt-4">
+              <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>
-                  <strong>Mobile Design Considerations:</strong> Creating a
-                  mobile version of the website was a significant challenge, as
-                  it required me to rethink how elements are laid out and how
-                  content is displayed. Ensuring that all content remains
-                  accessible and readable on smaller screens was a key lesson.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Responsive Design:
+                  </span>{" "}
+                  Learned how to use media queries, fluid layouts, and scalable
+                  components across devices.
                 </li>
                 <li>
-                  <strong>Responsive Design Principles:</strong> I gained
-                  hands-on experience with media queries and flexible layouts,
-                  which allowed me to create a design that adapts to different
-                  screen sizes. This process involved a lot of trial and error
-                  but helped me understand the importance of fluid grids and
-                  scalable images.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Mobile UX:
+                  </span>{" "}
+                  Reworked content and layout to ensure clarity and
+                  accessibility on smaller screens.
                 </li>
                 <li>
-                  <strong>UI/UX Balance:</strong> I learned the importance of
-                  maintaining a balance between visual appeal and user
-                  experience. It's not just about making a website look good,
-                  but also ensuring it's intuitive, easy to navigate, and
-                  functional across all devices.
-                </li>
-                <li>
-                  <strong>Testing and Iterating:</strong> One of the biggest
-                  lessons was the importance of testing the design on multiple
-                  devices and screen sizes. I quickly learned that what looks
-                  good on a desktop may not work well on a phone. Constant
-                  iteration was necessary to fine-tune the layout and design
-                  elements.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Visual + UX Balance:
+                  </span>{" "}
+                  Focused on making the site both user-friendly and engaging
+                  without sacrificing performance.
                 </li>
               </ul>
 
               <h2 className="text-2xl font-bold mt-4">Challenges I Faced</h2>
-              <ul className="list-disc pl-6 mt-4">
+              <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>
-                  <strong>Dealing with Legacy Design:</strong> The Webkinz
-                  website had an outdated design that made it hard to work with
-                  at first. Integrating modern design principles while
-                  maintaining a nostalgic feel was a difficult balancing act.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Modernizing a Legacy Design:
+                  </span>{" "}
+                  Balancing nostalgia with usability was tricky but rewarding.
                 </li>
                 <li>
-                  <strong>Typography Struggles:</strong> One area I struggled
-                  with was learning how to effectively implement different
-                  fonts. While I kept the design simple and clean, I realized
-                  that using varied fonts could further enhance visual hierarchy
-                  and improve readability. Understanding how to load and use
-                  custom fonts is something I want to explore and incorporate in
-                  my future projects.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Typography:
+                  </span>{" "}
+                  I realized how much type affects hierarchy and
+                  readability—something I'm excited to improve.
                 </li>
                 <li>
-                  <strong>Responsive Breakpoints:</strong> Determining the right
-                  breakpoints for different devices (desktop, tablet, and phone)
-                  was a bit tricky. It took several iterations to get the design
-                  looking good on all screen sizes.
-                </li>
-                <li>
-                  <strong>Performance Optimization:</strong> Ensuring that the
-                  website loads quickly on mobile devices, especially with
-                  images and animations, was another challenge. I had to be
-                  mindful of optimizing images and limiting the use of heavy
-                  elements.
-                </li>
-                <li>
-                  <strong>Learning Flexbox and Grid Layouts:</strong> Although I
-                  had experience with layout techniques before, working with
-                  Flexbox and CSS Grid for the responsive design was a learning
-                  curve. However, I quickly realized how powerful these tools
-                  are for building flexible and responsive layouts.
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    Performance:
+                  </span>{" "}
+                  Optimizing images and layouts for fast mobile load times was
+                  key.
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold mt-4">Moving Forward</h2>
+              <h2 className="text-2xl font-bold mt-4">Next Steps</h2>
               <p className="mt-4">
-                Going forward, I plan to continue honing my skills in responsive
-                web design, focusing on optimizing the user experience for all
-                devices. Additionally, I'm eager to learn more about typography
-                and implementing different font families effectively, as I now
-                recognize how much they can impact a site's personality and
-                readability. I'm excited to apply everything I've learned to
-                future projects, particularly in creating more dynamic,
-                interactive, and polished web experiences.
+                I'm continuing to refine my responsive design skills and
+                exploring how to better use typography and animations to enhance
+                UX. This project made me more confident in designing across
+                devices and thinking critically about layout, hierarchy, and
+                accessibility.
               </p>
             </section>
           </div>

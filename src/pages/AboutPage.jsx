@@ -3,21 +3,72 @@ import PhotoGrid from "../components/PhotoGrid";
 
 const colors = {
   grey: "#D9D9D9",
-  pink: "#F6A6B9",
+  pink: "#9e008c",
   bg: "#fcf8f3",
 };
 
 const aboutImages = [
-  "/images/about/takingphoto.jpeg",
-  "/images/about/thumbsup.jpeg",
-  "/images/about/canes.jpeg",
-  "/images/about/crepe.jpeg",
-  "/images/about/pac.jpeg",
-  "/images/about/museum.jpeg",
-  "/images/about/upsidedown.jpeg",
-  "/images/about/windmill.jpeg",
-  "/images/about/tulips.jpeg",
-  "/images/about/looking.jpeg",
+  {
+    src: "/images/about/takingphoto.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/pac.jpeg",
+    width: 5,
+    height: 4,
+  },
+  {
+    src: "/images/about/tulips.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/thumbsup.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/windmill.jpeg",
+    width: 5,
+    height: 3,
+  },
+  {
+    src: "/images/about/canes.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/crepe.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/eating.jpeg",
+    width: 4,
+    height: 5,
+  },
+
+  {
+    src: "/images/about/swe.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/takingphoto2.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/upsidedown.jpeg",
+    width: 4,
+    height: 5,
+  },
+  {
+    src: "/images/about/looking.jpeg",
+    width: 5,
+    height: 3,
+  },
 ];
 
 const AboutPage = () => {
@@ -38,33 +89,45 @@ const AboutPage = () => {
         {/* Intro */}
         <p className="mb-4 leading-relaxed">
           Hi! I'm <strong>Daniela</strong> (she/they). I'm a{" "}
-          <strong>UX designer & creative developer</strong> passionate about
-          building thoughtful digital experiences. I currently live in
-          Providence and am a software engineering intern @ JPMC.
+          <strong>creative developer</strong> passionate about building
+          thoughtful digital experiences that blend logic with a little bit of
+          whimsy.
         </p>
 
-        {/* Education + Journey */}
+        {/* Academic Journey */}
         <p className="mb-4 leading-relaxed">
-          I study <strong>Computer Science</strong> and{" "}
-          <strong>Cognitive Science</strong> at{" "}
-          <strong>Brown University</strong>, where I discovered my love for
-          digital interaction, accessibility, and playful design. I'm especially
-          curious about how people think, click, and create online.
+          I arrived at Brown torn between <strong>Computer Science</strong> and{" "}
+          <strong>Computer Engineering</strong>, but after a year of doing both,
+          I realized software was my true calling. While wrestling with circuits
+          and compilers, I started taking <strong>Cognitive Science</strong>{" "}
+          classes just for fun — but I quickly found myself hooked on the study
+          of minds, systems, and how we interpret the world. Lucky for me,
+          double majoring was possible.
         </p>
 
-        {/* Work history / experience */}
         <p className="mb-4 leading-relaxed">
-          Previously, I've had a fellowship at companies like{" "}
-          <strong>J.P. Morgan Chase</strong> and built internal tools,
-          frontends, and prototypes for teams across tech and research. I've
-          also been involved in student orgs like <strong>WiSE</strong> and{" "}
-          <strong>DSI</strong>.
+          Now I spend my time exploring the intersection of computation and
+          cognition — designing systems that feel intuitive and uncovering how
+          perception drives action. I'm currently a{" "}
+          <strong>Software Engineering Intern</strong> at{" "}
+          <strong>J.P. Morgan Chase</strong> and a{" "}
+          <strong>Lab Assistant</strong> in Brown's{" "}
+          <strong>erception, Action and Cognition Lab</strong>, where I get to
+          combine curiosity with code.
         </p>
 
-        {/* Fun facts */}
+        {/* Interests */}
         <p className="mb-4 leading-relaxed">
-          I'm a big chai fan, obsessed with pixel fonts, and I spend way too
-          much time organizing things in Notion.
+          Outside the techie-academic bubble, I'm a bit of a multi-hyphenate:{" "}
+          <strong>dance enthusiast</strong>,{" "}
+          <strong>Studio Ghibli loyalist</strong>,{" "}
+          <strong>Nintendo kid at heart</strong>, and an occasional{" "}
+          <strong>flower presser</strong> (you can call it botanical
+          preservation if you're feeling fancy). I also dabble in{" "}
+          <strong>photography</strong>, <strong>mentoring</strong>, and spend
+          far too much time curating the perfect setup in{" "}
+          <strong>Notion</strong>. And yes — I take my <strong>chai</strong>{" "}
+          seriously.
         </p>
 
         {/* Links */}
@@ -99,10 +162,9 @@ const AboutPage = () => {
 
         {/* Image collage */}
         <PhotoGrid
-          images={aboutImages}
-          columns={4}
+          photos={aboutImages}
           onImageClick={(src) => {
-            setSelectedImage(src); // optional if you're using a modal
+            setSelectedImage(src);
             setModalOpen(true);
           }}
         />

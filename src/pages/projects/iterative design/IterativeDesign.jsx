@@ -132,7 +132,7 @@ const IterativeDesign = () => {
         "--color-text": colors.text,
         "--color-heading": colors.heading,
       }}
-      className="w-full text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
+      className="w-full font-wix text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
     >
       {/* Fullscreen Image Modal */}
       {selectedImage && (
@@ -192,170 +192,100 @@ const IterativeDesign = () => {
         </div>
       </section>
 
-      {/* Project Description */}
+      {/* Overview Section */}
       <section className="w-full flex flex-col md:flex-row py-16 px-14 bg-[var(--color-light)] text-[var(--color-heading)]">
         {/* Left Side (3/4) */}
-        <div className="md:w-3/4 w-full text-left space-y-4">
-          <h2 className="text-3xl font-bold">Project Description</h2>
-
-          <p>
-            In this project, our team partnered with Warp, a next-gen terminal
-            reimagined with AI and collaboration at its core. We aimed to
-            address a key usability gap: the lack of a centralized dashboard
-            where users can manage their account, team, sessions, and explore AI
-            features. As Warp expands its collaborative and cloud-based tools,
-            this "Home" experience would serve as the foundation for a more
-            guided, discoverable, and intelligent user experience.
+        <div className="md:w-3/4 w-full text-left space-y-6">
+          <h2 className="text-4xl font-bold text-[var(--color-dark)]">
+            Warp Terminal: Designing the "Home" Dashboard
+          </h2>
+          <p className="text-xl">
+            Collaborating with the team at Warp to design a centralized
+            dashboard that improves discoverability and supports team-based
+            terminal workflows.
           </p>
-
           <p>
-            In working directly with a startup, this project challenged us to
-            think critically about users, iterate based on feedback, and balance
-            design creativity with business needs. We identified key needs,
-            sketched concepts, and built wireframes and prototypes. Through
-            multiple rounds of feedback and usability testing, we refined the
-            layout and content to better support essential features of the
-            "Home" experience.
+            We partnered with Warp, an AI-powered terminal, to design their
+            first \Home" experience: a dashboard to unify account management,
+            team visibility, and AI tools. Our design process involved
+            identifying user needs, sketching concepts, testing wireframes, and
+            iterating on layouts based on direct feedback.
           </p>
-
           <p>
-            Our design focused on surfacing Warp's powerful features without
-            overwhelming users — from AI-assisted commands to team insights and
-            usage metrics. We prioritized clarity, accessibility, and
-            discoverability, ensuring that the interface could support both
-            power users and first-time collaborators. This homepage now acts as
-            a launchpad: a space that introduces, guides, and evolves with the
-            user.
+            The result is a clean, accessible homepage that introduces new users
+            to Warp's collaborative features and empowers teams to work more
+            efficiently with guidance, metrics, and smart suggestions.
           </p>
-
           <p>
-            Throughout this process, we also considered how the dashboard fits
-            into the broader Warp ecosystem. By drawing inspiration from
-            familiar tools like Figma and GitHub, we explored interface patterns
-            that could support team workflows without introducing friction. We
-            constantly weighed the tradeoffs between surfacing more information
-            and keeping the UI clean, and made decisions based on stakeholder
-            input and design best practices.
-          </p>
-
-          <p>
-            Ultimately, this project gave us a window into the real-world design
-            process: rapid iteration, collaboration across roles, and designing
-            within product and technical constraints. The "Home" interface we
-            created is not just a static layout — it's a framework for how Warp
-            can onboard, support, and empower its users from the very first
-            interaction.
+            <span className="font-semibold text-[var(--color-heading)]">
+              Note:
+            </span>{" "}
+            This was a group project. Daniela DeDona led the design of the Home
+            and How to Use sections, Mia Nguyen focused on the Teams and How to
+            Use sections, Jacob Stifelman worked on Metrics, and Efram Geller
+            handled Billing.
           </p>
         </div>
 
         {/* Right Side (1/4) */}
-        <div className="w-1/4 text-left pl-8">
-          <h3 className="text-2xl font-bold">Contribution</h3>
-          <p>
-            Research, Branding, UX/UI Design, Prototypes, Website Development,
-            Accessible UI Components
-          </p>
-          <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
-          <p>4 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">Team Members</h3>
-          <ul className="list-disc list-inside">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/daniela-dedona/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Daniela DeDona
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/mia-nguyen-brownu/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Mia Nguyen
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jacob-stifelman/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Jacob Stifelman
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/efram-geller-ab5638246/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Efram Geller
-              </a>
-            </li>
-          </ul>
-
-          <h3 className="text-2xl font-bold mt-4">References</h3>
-          <ul className="list-disc list-inside space-y-1">
-            <li>
-              <a
-                href="https://www.warp.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Warp — AI-Powered Terminal
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.warp.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Warp Documentation
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.balsamiq.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Balsamiq — Wireframing Software
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.loom.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Loom — Video Walkthrough Recording
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://uxdesign.cc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                UX Collective — Design Thinking
-              </a>
-            </li>
-          </ul>
+        <div className="w-full md:w-1/4 text-left pl-0 md:pl-8 mt-10 md:mt-0 space-y-4">
+          <div>
+            <h3 className="text-xl font-bold">Role</h3>
+            <p>Product Designer, UX Researcher</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Duration</h3>
+            <p>4 Weeks, Spring 2025</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Team</h3>
+            <ul className="list-disc list-inside">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/daniela-dedona/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:underline"
+                >
+                  Daniela DeDona
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mia-nguyen-brownu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Mia Nguyen
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jacob-stifelman/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:underline"
+                >
+                  Jacob Stifelman
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/efram-geller-ab5638246/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:underline"
+                >
+                  Efram Geller
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mt-4">Tools</h3>
+            <p>Figma, Balsamiq, Loom, React</p>
+          </div>
         </div>
       </section>
 
@@ -394,37 +324,19 @@ const IterativeDesign = () => {
               </h1>
 
               <p>
-                We began our iterative design process by brainstorming and
-                visualizing possible directions for a{" "}
-                <span className="font-semibold">
-                  centralized homepage interface
-                </span>{" "}
-                for Warp — a developer-first AI terminal. This dashboard would
-                serve as a hub to manage teams, sessions, recent activity, and
-                AI-powered suggestions, helping users navigate Warp's ecosystem
-                more efficiently.
+                Our target users were{" "}
+                <span className="font-semibold">desktop-based engineers</span>{" "}
+                working in collaborative environments. A dashboard could reduce
+                friction by surfacing relevant files, team activity, and AI
+                features upfront.
               </p>
 
               <p>
-                Our goal was to create an interface for{" "}
-                <span className="font-semibold">desktop users</span>,
-                specifically engineers who use Warp in collaborative
-                environments. These users often struggle to find relevant files,
-                understand team activity, or discover Warp's advanced AI tools.
-                A dashboard could surface these features proactively, reducing
-                friction and cognitive overhead.
-              </p>
-
-              <p>
-                As a group, we sketched{" "}
-                <span className="font-semibold">
-                  four distinct layout ideas
-                </span>
-                , each exploring different ways to surface core functionalities
-                such as team management, AI suggestions, account settings, and
-                product metrics. Each member contributed three sketches — a home
-                screen and two supporting screens — for a total of 16 unique
-                sketches.
+                Each team member sketched layout concepts for the home screen
+                and supporting pages, resulting in{" "}
+                <span className="font-semibold">16 unique sketches</span>. We
+                explored different ways to organize team management, AI
+                suggestions, and product metrics.
               </p>
 
               {/* Group Sketch Gallery */}
@@ -464,24 +376,19 @@ const IterativeDesign = () => {
               ))}
 
               <p>
-                After reviewing all sketches, we had a team discussion around
-                what elements worked well and which approaches best aligned with
-                Warp's goals. From that conversation, we created a consolidated
-                wireframe using Balsamiq, combining the strongest parts of our
-                sketches.
+                After reviewing the sketches, we held a group critique and
+                merged the strongest ideas into a consolidated wireframe using
+                Balsamiq.
               </p>
 
               <p>
-                Key decisions included surfacing team management and metrics in
-                a left-side tab panel, while allowing quick access to AI
-                suggestions and recent activity. This layout prioritized
-                visibility without cluttering the interface.
+                We prioritized{" "}
+                <span className="font-semibold">clarity and quick access</span>,
+                placing team tools and metrics in a left tab panel and surfacing
+                AI suggestions prominently.
               </p>
 
-              <p>
-                You can view the final wireframes and our walkthrough in the
-                Loom video below.
-              </p>
+              <p>View our final wireframes and walkthrough below.</p>
 
               <div className="w-full h-[550px] mt-10">
                 <iframe
@@ -501,11 +408,9 @@ const IterativeDesign = () => {
               </h1>
 
               <p>
-                After submitting our wireframe via Loom, we received detailed
-                feedback from Warp stakeholders and critiqued our work in person
-                with Vanessa Cho. Below is a breakdown of the feedback we
-                received on each section of our design, and the changes we made
-                (or chose not to make) in response.
+                We presented our wireframe via Loom and received stakeholder
+                feedback, including a live critique with Vanessa Cho. Below is a
+                summary of that feedback and our resulting design changes.
               </p>
 
               {/* ===== HOME ===== */}
@@ -516,18 +421,11 @@ const IterativeDesign = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Is this dashboard intended to{" "}
-                        <span className="italic">replace</span> WarpDrive?
-                        There's concern it overlaps too much with the Documents
-                        section.
+                        Too similar to WarpDrive — unclear differentiation.
                       </li>
+                      <li>Dropdown crams too many features together.</li>
                       <li>
-                        The current dropdown may be cramming too many features
-                        into one place.
-                      </li>
-                      <li>
-                        Why is “Ask Warp” separated from the terminal? It
-                        currently serves as a dual-mode input.
+                        “Ask Warp” should stay integrated with the terminal.
                       </li>
                     </ul>
                   </div>
@@ -535,19 +433,17 @@ const IterativeDesign = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our Response</p>
+                    <p className="font-semibold mb-1">Response</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We reframed the dashboard as a complementary overview
-                        that enhances WarpDrive, not replaces it.
+                        Positioned as a companion to WarpDrive, not a
+                        replacement.
                       </li>
                       <li>
-                        We surfaced persona-based functionality directly on the
-                        dashboard.
+                        Surface actions contextually instead of in dropdowns.
                       </li>
                       <li>
-                        “Ask Warp” will be integrated with the terminal input to
-                        align with current user expectations.
+                        “Ask Warp” merged with terminal input for consistency.
                       </li>
                     </ul>
                   </div>
@@ -562,28 +458,22 @@ const IterativeDesign = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        The IA could use more thoughtful grouping—look at
-                        Figma's org/project hierarchy.
+                        Better grouping needed — look at Figma's structure.
                       </li>
-                      <li>
-                        Make assumptions clear (e.g., users belong to teams, not
-                        just projects).
-                      </li>
+                      <li>Clarify team vs. project assumptions.</li>
                     </ul>
                   </div>
                   <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our Response</p>
+                    <p className="font-semibold mb-1">Response</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We adopted a clear structure where users belong to
-                        teams, and teams manage multiple workspaces.
+                        Structured teams as top-level with multiple workspaces.
                       </li>
                       <li>
-                        We simplified navigation and made team-level views more
-                        consistent.
+                        Simplified IA and made team views more consistent.
                       </li>
                     </ul>
                   </div>
@@ -598,60 +488,23 @@ const IterativeDesign = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Tailor metrics to specific user types — e.g., admins
-                        care about performance stats.
+                        Tailor metrics to roles (e.g., admins want usage
+                        insights).
                       </li>
-                      <li>
-                        Show value — like how much time is saved using agentic
-                        suggestions.
-                      </li>
+                      <li>Show tangible value, like time saved via AI.</li>
                     </ul>
                   </div>
                   <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our Response</p>
+                    <p className="font-semibold mb-1">Response</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We proposed usage-based metrics: frequency of AI
-                        suggestions, time saved, etc.
+                        Added role-specific metrics like AI usage frequency.
                       </li>
                       <li>
-                        We tailored the display based on user role (e.g., admin
-                        vs. team member).
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== BILLING ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">Billing</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        The pricing tiers are too prominent — not reflective of
-                        what users actually come to view.
-                      </li>
-                      <li>
-                        Look at Figma's billing portal for a more intuitive
-                        model.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our Response</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We demoted pricing tiers to a secondary page and
-                        prioritized recent invoices and usage breakdowns.
+                        Framed impact via time savings and workflow efficiency.
                       </li>
                     </ul>
                   </div>
@@ -665,25 +518,19 @@ const IterativeDesign = () => {
                   <div className="md:w-1/2">
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
-                      <li>
-                        Does this belong buried under a tab on the homepage?
-                      </li>
-                      <li>
-                        Consider surfacing onboarding at a more relevant point
-                        in the user journey.
-                      </li>
+                      <li>“How to Use” is too buried.</li>
+                      <li>Consider surfacing onboarding more contextually.</li>
                     </ul>
                   </div>
                   <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our Response</p>
+                    <p className="font-semibold mb-1">Response</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We're redesigning onboarding to live at the top of the
-                        homepage, including suggested code blocks and a CTA
-                        linking to more detailed resources.
+                        Moved onboarding to the top of the homepage with a CTA
+                        and sample code blocks.
                       </li>
                     </ul>
                   </div>
@@ -715,93 +562,75 @@ const IterativeDesign = () => {
               </h1>
 
               <p>
-                Building on the wireframes and stakeholder critique, we crafted
-                a <span className="font-semibold">Hi-Fi Figma prototype</span>{" "}
-                that looks, feels, and navigates like finished Warp Home.
+                We transformed our wireframes into a polished{" "}
+                <span className="font-semibold ">Figma prototype</span> that
+                reflects a functional Warp Home experience.
               </p>
 
               <p>
-                <span className="font-semibold">Home dashboard.</span> We pulled
-                the most requested onboarding featured directly onto the landing
-                view: a “Getting Started” card for brand-new users that they
-                don't have to search for. An updates{" "}
-                <span className="font-semibold">Updates</span> panel
-                highlighting recent Warp changes and a horizontally-scrollable{" "}
-                <span className="font-semibold">Recent Activity</span> carousel
-                letting quickly jump into their previous work. The existing Warp
-                Drive stays on the left, while the new Warp Home sidebar
-                navigation can be toggled as well. The two swap with each other
-                when clicked.
-              </p>
-
-              <p>
-                <span className="font-semibold">Teams view.</span> Inspired by
-                Figma's layout, the Teams page now opens with top-level team
-                tiles that expose member count and recent activity. Selecting a
-                team slides Warp Drive into view and surfaces{" "}
-                <span className="font-semibold">
-                  templates, live activity, and all team files
+                <span className="font-semibold text-[var(--color-heading)]">
+                  Home:
                 </span>{" "}
-                in a single feedback
+                I surfaced onboarding with a “Getting Started” card, added an{" "}
+                <span className="font-semibold">Updates</span> panel, and
+                included a horizontal{" "}
+                <span className="font-semibold">Recent Activity</span> carousel.
+                Users can toggle between Warp Drive and Warp Home in the
+                sidebar.
               </p>
 
               <p>
-                <span className="font-semibold">Billing.</span> Critique called
-                our old billing mock salesy and in your face. We stripped the
-                upsell banners introduced a calm layout: current plan, paid
-                seats vs. total team size, clear invoices, and simple{" "}
-                <span className="font-semibold">Manage </span> button.
-              </p>
-
-              <p>
-                <span className="font-semibold">Metrics.</span> Because admins
-                measure ROI, we replaced generic charts with{" "}
+                <span className="font-semibold text-[var(--color-heading)]">
+                  Teams:
+                </span>{" "}
+                Modeled after Figma, team tiles show member count and activity.
+                Clicking slides in{" "}
                 <span className="font-semibold">
-                  AI usage rate, estimated time saved, team speed , and commmand
-                  usage
+                  templates, live activity, and files
                 </span>
-                . A “Get More Metrics” button lets orgs track what matters to
-                them. The metrics are shown in a clean and organized matter.
+                .
+              </p>
+
+              <p>
+                <span className="font-semibold text-[var(--color-heading)]">
+                  Billing:
+                </span>{" "}
+                Removed upsells and focused on clarity: current plan, seat
+                usage, invoices, and a simple{" "}
+                <span className="font-semibold">Manage</span> button.
+              </p>
+
+              <p>
+                <span className="font-semibold text-[var(--color-heading)]">
+                  Metrics:
+                </span>{" "}
+                Swapped generic charts for{" "}
+                <span className="font-semibold">
+                  AI usage, time saved, team speed, and command stats
+                </span>
+                . A “Get More Metrics” CTA allows for customization.
               </p>
 
               <p>
                 <span className="font-semibold">
-                  Key feedback incorporated:
+                  Key changes based on feedback:
                 </span>
                 <ul className="list-disc list-inside space-y-1">
-                  <li>
-                    Moved onboarding tips in clear view instead of hiding them
-                    in a tab.
-                  </li>
-                  <li>
-                    Kept Warp Drive as a permanent feautre; Warp Home sidebar is
-                    available and swaps with Warp Drive
-                  </li>
-                  <li>Grouped Teams → Members → Files like Figma</li>
-                  <li>
-                    Dialed back Billing page marketing and separated seat counts
-                    from invoices. Made the billing focused on current plans and
-                    past invoices
-                  </li>
-                  <li>
-                    Refocused Metrics on tangible developer value, not internal
-                    Warp KPIs.
-                  </li>
+                  <li>Onboarding tips moved to the main view</li>
+                  <li>Warp Drive retained; Warp Home sidebar toggleable</li>
+                  <li>Team Members > Files follows Figma structure</li>
+                  <li>Billing reduced to essentials: plan, seats, invoices</li>
+                  <li>Metrics highlight user value, not internal KPIs</li>
                 </ul>
               </p>
 
               <p>
-                Our hi-fi prototype aims to{" "}
-                <span className="font-semibold">
-                  addresses the critical pain points surfaced in critique and
-                  demonstrates a cohesive, production-ready workflow
-                </span>
-                .
+                This prototype directly addresses critique pain points and
+                delivers a clear, production-ready workflow.
               </p>
-              <p>
-                You can view the final wireframes and our walkthrough in the
-                Loom video below, as well as through an interactive Figma file.
-              </p>
+
+              <p>Explore the walkthrough and prototype below:</p>
+
               <div className="w-full h-[550px] mt-10">
                 <iframe
                   src="https://www.loom.com/embed/27d983c61b4945af92e68bf9d468e08b"
@@ -818,7 +647,7 @@ const IterativeDesign = () => {
                   frameBorder="0"
                   allowFullScreen
                   className="w-full h-full rounded-md shadow-lg"
-                  title="Loom walkthrough"
+                  title="Figma prototype"
                 ></iframe>
               </div>
             </section>
@@ -830,242 +659,65 @@ const IterativeDesign = () => {
               </h1>
 
               <p>
-                After submitting our Hi-Fi prototype, we had the privelage to
-                meet with two developers on the Warp team. This in-person
-                critique was a chace for us to ask questions about our design,
-                recieve meaningful and actionable feedback, and begin thinking
-                how we would continue to iterate on our prototype if this
-                project was to continue. The main pieces of feedback are
-                summarized below:
+                After submitting our Hi-Fi prototype, we had the opportunity to
+                meet with two developers from the Warp team. This in-person
+                critique allowed us to ask questions, receive actionable
+                feedback, and reflect on how we might iterate further if the
+                project continued. Key takeaways are summarized below.
               </p>
 
-              {/* ===== HOME ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">Home</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        Design pattern with two toggling side panels (Settings /
-                        Drive) is unconventional and potentially confusing.
-                      </li>
-                      <li>
-                        Putting all features on a single page might lead to
-                        clutter and zero states for new users.
-                      </li>
-                      <li>
-                        A home page should not be the first thing shown —
-                        developers expect to land in a terminal.
-                      </li>
-                      <li>
-                        Home content could instead live in a separate tab, like
-                        WarpDrive, and not be shown until later.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">
-                      Our (Theoretical) Response
-                    </p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We'll explore making the home view an optional, separate
-                        tab that's accessible but not intrusive.
-                      </li>
-                      <li>
-                        Settings and Drive access will be streamlined into a
-                        unified side menu with simpler navigation.
-                      </li>
-                      <li>
-                        Initial states will be designed with progressive
-                        disclosure to minimize friction for new users.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== TEAM ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">Team</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        Members should be visible in the preview but managed on
-                        a separate members page.
-                      </li>
-                      <li>
-                        Roles, permissions, and add/remove functions should be
-                        clearly presented in a dedicated tab.
-                      </li>
-                      <li>
-                        Consider aligning with layout patterns from other tabs
-                        like Billing.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">
-                      Our (Theoretical) Response
-                    </p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We'll move management features to a focused Members tab
-                        with clear editing capabilities.
-                      </li>
-                      <li>
-                        Preview components will stay lightweight and limited to
-                        user presence.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== BILLING ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">Billing</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        Current billing hierarchy is unclear — paid seats and
-                        team size should be separated from invoice details.
-                      </li>
-                      <li>
-                        Avoid blending plan management with actual cost
-                        reporting.
-                      </li>
-                      <li>
-                        Remove unnecessary marketing content from this page —
-                        users already know their plan.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">
-                      Our (Theoretical) Response
-                    </p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We'll restructure the billing page to separate plan
-                        settings, seat counts, and invoices into distinct
-                        sections.
-                      </li>
-                      <li>
-                        Plan summaries will be moved to a lightweight “Manage
-                        Plan” view.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== METRICS ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">Metrics</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        Distinguish between individual and team-level metrics —
-                        avoid combining them in one view.
-                      </li>
-                      <li>
-                        Highlight developer-relevant metrics like build times
-                        and error rates over AI prompt usage types.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">
-                      Our (Theoretical) Response
-                    </p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We'll separate individual and team stats into clearly
-                        labeled sections.
-                      </li>
-                      <li>
-                        We'll prioritize actionable developer metrics like error
-                        rate and build time over internal AI usage stats.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== ONBOARDING & CUSTOMIZATION ===== */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-bold">
-                  Onboarding & Customization
-                </h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Feedback</p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        Onboarding should happen contextually — introduce
-                        features like prompt suggestions when users encounter
-                        bugs, not before.
-                      </li>
-                      <li>
-                        Users liked the idea of customization — e.g., a
-                        widget-style editor for Home could be powerful.
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
-                    →
-                  </div>
-                  <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">
-                      Our (Theoretical) Response
-                    </p>
-                    <ul className="list-disc list-inside">
-                      <li>
-                        We'll adopt a “learn by doing” model by surfacing tools
-                        only when users need them.
-                      </li>
-                      <li>
-                        We're exploring a customizable home layout that gives
-                        power users greater control over their interface.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
               {/* ===== FINAL THOUGHTS ===== */}
-              <div className="text-left space-y-10">
+              <div className="text-left space-y-6">
                 <h2 className="text-xl font-bold">Final Thoughts</h2>
                 <p>
-                  This session provided clarity on how experienced developers
-                  expect structure, focus, and subtle onboarding in tools like
-                  Warp. We're excited to rethink some of our layout choices and
-                  consider more contextual design strategies.
+                  The session clarified how experienced developers value
+                  clarity, focus, and non-intrusive onboarding in technical
+                  tools. It challenged us to rethink parts of our layout and
+                  consider how to deliver guidance without disrupting expert
+                  workflows.
                 </p>
+
+                <ol className="list-inside space-y-2">
+                  <li>
+                    <span className="text-[var(--color-heading)] font-semibold">
+                      1.
+                    </span>{" "}
+                    Make the Home view an optional, secondary tab rather than
+                    the default landing experience.
+                  </li>
+                  <li>
+                    <span className="text-[var(--color-heading)] font-semibold">
+                      2.
+                    </span>{" "}
+                    Consolidate navigation by combining Settings, Warp Drive,
+                    and Team access into a single, streamlined sidebar.
+                  </li>
+                  <li>
+                    <span className="text-[var(--color-heading)] font-semibold">
+                      3.
+                    </span>{" "}
+                    Break up complex views like Billing and Metrics into
+                    cleaner, role-specific sections.
+                  </li>
+                  <li>
+                    <span className="text-[var(--color-heading)] font-semibold">
+                      4.
+                    </span>{" "}
+                    Prioritize actionable metrics (e.g., build time, error rate)
+                    over abstract AI usage data.
+                  </li>
+                  <li>
+                    <span className="text-[var(--color-heading)] font-semibold">
+                      5.
+                    </span>{" "}
+                    Use contextual onboarding and support Home screen
+                    customization for power users.
+                  </li>
+                </ol>
+
                 <p className="italic">
-                  Open question: How can we balance first-time user guidance
-                  with the expectations of a power user who just wants to get
-                  coding?
+                  Open question: How do we guide new users without overwhelming
+                  power users who just want to start coding?
                 </p>
               </div>
             </section>
@@ -1078,13 +730,13 @@ const IterativeDesign = () => {
 
               {/* Intro */}
               <div className="space-y-4">
-                <h2 className="text-xl font-semibold">What We Learned</h2>
+                <h2 className="text-xl font-semibold">What I Learned</h2>
                 <p>
-                  This project pushed us beyond just “making things look good.”
-                  It was about solving the right problem, for the right user,
-                  with the right design. Working with a real startup challenged
-                  us to ask better questions and make more informed, intentional
-                  design choices through every feedback cycle.
+                  This project taught me how to move beyond aesthetics and focus
+                  on solving real problems for real users. Working directly with
+                  a startup pushed me to ask better questions, interpret
+                  feedback critically, and iterate with purpose. It was a crash
+                  course in balancing user needs with product constraints.
                 </p>
               </div>
 
@@ -1093,34 +745,6 @@ const IterativeDesign = () => {
                 "Design isn't just about screens — it's about clarity,
                 intention, and impact."
               </blockquote>
-
-              {/* Collaboration */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold">Collaboration Wins</h2>
-                <p>
-                  Our team leaned into the process. Sketching together led to
-                  surprising ideas. Feedback sparked deeper discussions. We
-                  iterated, combined concepts, and challenged each other — and
-                  the result was a design that felt stronger than any one of us
-                  could've created alone.
-                </p>
-              </div>
-
-              {/* Forward Thinking */}
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold">Looking Ahead</h2>
-                <p>
-                  We're excited to take this prototype further — adding
-                  interactions, testing it with different kinds of users, and
-                  refining based on what we learn. There's still more to
-                  explore: onboarding, discoverability, and the role AI can play
-                  in supporting developers without overwhelming them.
-                </p>
-                <p className="italic">
-                  If good design is invisible, we're on a mission to make Warp
-                  feel effortless.
-                </p>
-              </div>
             </section>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const colors = {
   grey: "#D9D9D9",
-  pink: "#F6A6B9",
+  pink: "#9e008c",
   bg: "#fefdfb",
 };
 

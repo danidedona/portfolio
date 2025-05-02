@@ -74,46 +74,45 @@ const GoogleForms = {
   ],
   firstChartRow1: {
     left: "Mouse / Touchpad",
-    right: ["Aesthetically pleasing with color theme matching"],
+    right: [
+      "Visually clean and matches form color theme",
+      "Easy and intuitive to click",
+    ],
   },
   firstChartRow2: {
     left: "Keyboard",
     right: [
-      "Accessible through tab",
-      "The enter button does not work to check the checkbox, instead it is space which is not intuitive",
+      "Navigable via tab",
+      "Only spacebar checks boxes, not enter (non-intuitive)",
     ],
   },
   firstChartRow3: {
     left: "Touch",
-    right: ["Same look and functionality on mobile"],
+    right: [
+      "Mobile version looks and behaves the same",
+      "Easy to tap with clear visual feedback",
+    ],
   },
+
   secondChartRow1: {
     left: "Mouse / Touchpad",
     right: [
-      "Hover:A darker circle appears encapsulating the check box indicating the hovered area",
-      "Click: The box turns the theme color",
-      "Click: A check appears in the box",
-      "Click: The dark circle persists",
+      "Hover shows a dark circle; click fills with theme color",
+      "Checkmark appears clearly inside the circle",
     ],
   },
   secondChartRow2: {
     left: "Keyboard",
     right: [
-      "Focus order makes complete sense as you move throughout the form",
-      "Voiceover for each box:",
-      "“Option 1, unchecked, checkbox, list Untitled Question Required question 4 items, level 2 Required”",
-      "“Option 2, unchecked, checkbox”",
-      "“Option 3, unchecked, checkbox”",
-      "“Other:, unchecked, checkbox”",
-      "“Other response, edit text”",
+      "Logical focus order across items",
+      "Screen reader announces full label and checkbox state",
     ],
   },
   secondChartRow3: {
     left: "Touch",
     right: [
-      "Click: A darker circle appears encapsulating the check box indicating the selected area",
-      "Click: The box turns the theme color",
-      "Click: A check appears in the box",
+      "Tap fills checkbox with theme color and checkmark",
+      "Touch response mirrors mouse interaction",
     ],
   },
 };

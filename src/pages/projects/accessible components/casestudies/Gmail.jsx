@@ -61,42 +61,45 @@ const Gmail = {
   ],
   firstChartRow1: {
     left: "Mouse / Touchpad",
-    right: ["Very efficient in terms of being able to select multiple emails"],
+    right: [
+      "Efficient for bulk selection",
+      "Clear visual feedback when selecting emails",
+    ],
   },
   firstChartRow2: {
     left: "Keyboard",
     right: [
-      "The only option available is to select all emails",
-      "Individual emails checkboxes can not be checked or unchecked via tab",
+      "Only 'Select All' is accessible",
+      "No way to navigate to individual checkboxes via tab",
     ],
   },
   firstChartRow3: {
     left: "Touch",
-    right: ["Not as intuitive but is more aesthetically pleasing"],
+    right: [
+      "Not intuitive for new users",
+      "Relies more on visual design than clear cues",
+    ],
   },
+
   secondChartRow1: {
     left: "Mouse / Touchpad",
     right: [
-      "Hover: A darker circle appears encapsulating the check box indicating the hovered area",
-      "Hover: A tag saying “select appears”",
-      "Click: A check appears in the box",
-      "Click: The dark circle persists",
-      "Click: The emails is highlighted blue indicating it was selected",
+      "Hover shows a circle and 'Select' label",
+      "Click highlights the email and checks the box",
     ],
   },
   secondChartRow2: {
     left: "Keyboard",
     right: [
-      "The focus order is a bit confusing for those who can not see as the “Select all” button only appears after the “More” tab under “Labels”",
-      "Voiceover for select all button: “Select, menu pop up, button, main”",
-      "Voiceover for dropdown select all button: “You are currently in a menu”",
+      "Confusing focus order for 'Select All'",
+      "Screen reader feedback is verbose and unclear",
     ],
   },
   secondChartRow3: {
     left: "Touch",
     right: [
-      "Click: Blue check mark replaces the email sender's profile picture",
-      "Click: The email is highlighted blue",
+      "Tap replaces profile picture with a check mark",
+      "Selected email is highlighted in blue",
     ],
   },
 };

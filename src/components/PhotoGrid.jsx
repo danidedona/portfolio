@@ -1,26 +1,16 @@
-import React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
+import Gallery from "react-photo-gallery";
 
-const PhotoGrid = ({ images, columns = 3, onImageClick }) => {
+const PhotoGrid = ({ photos, onImageClick }) => {
   return (
-    <section className="mt-16">
-      <div className="w-full max-w-screen-xl mx-auto px-2">
-        <ImageList variant="masonry" cols={columns} gap={12}>
-          {images.map((src, i) => (
-            <ImageListItem key={i}>
-              <img
-                src={src}
-                alt={`Masonry collage ${i + 1}`}
-                loading="lazy"
-                className="w-full h-auto object-cover rounded-xl shadow-md cursor-pointer"
-                onClick={() => onImageClick?.(src)}
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </div>
-    </section>
+    <div className="mt-12">
+      <Gallery
+        photos={photos}
+        direction="row"
+        targetRowHeight={150}
+        margin={8}
+        onClick={({ photo }) => onImageClick?.(photo.src)}
+      />
+    </div>
   );
 };
 

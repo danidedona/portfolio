@@ -99,7 +99,7 @@ const AccessibleComponents = () => {
   }, []);
 
   return (
-    <div className="w-full text-center mb-8">
+    <div className="w-full font-wix text-center mb-8">
       {/* Content */}
       <div className="relative flex justify-center items-center w-full h-full">
         <div className="flex flex-col justify-center items-start text-black p-14">
@@ -136,79 +136,35 @@ const AccessibleComponents = () => {
         </div>
       </div>
 
-      {/* New Section */}
+      {/* Overview Section */}
       <div className="w-full flex flex-row py-16 px-14 bg-[#E4EFFA] bg-opacity-70">
         {/* Left Side (3/4) */}
         <div className="w-3/4 text-left">
-          <h2 className="text-3xl font-bold">The Checkbox</h2>
-          <p className="mt-8 mb-4">
-            Accessible components are crucial because they ensure that all
-            users, regardless of ability, can navigate and interact effectively.
-            Accessibility in design promotes inclusion, allowing people with
-            disabilities—whether related to vision, hearing, motor skills, or
-            cognitive processing—to use websites and applications without
-            barriers. When components are designed with accessibility in mind,
-            they support a broader audience, improving usability for everyone,
-            not just individuals with specific impairments.
+          {/* Top Heading and Summary */}
+          <h2 className="text-4xl font-bold mb-2 text-[#2483E2] text-left">
+            Accessible Checkbox Redesign
+          </h2>
+          <p className="text-xl mb-8 text-left">
+            Redesigning a checkbox component to ensure keyboard, mouse, and
+            mobile accessibility across platforms.
           </p>
-
-          <p className="my-4">
-            In this project, I explored the accessibility of checkboxes. By
-            analyzing three different applications, I identified key areas where
-            user input—via mouse, keyboard, and touch—impacts the accessibility
-            and efficiency of these components. I then redesigned one of these
-            components to improve learnability, memorability, and accessibility
-            for all users, including those with impairments. This case study
-            highlights my approach to designing inclusive, user-friendly
-            interfaces and demonstrates my ability to balance usability with
-            accessibility considerations.
+          <p className="mb-4">
+            I evaluated how checkboxes are implemented in Gmail, Google Forms,
+            and Notion to understand common accessibility breakdowns. After
+            identifying usability issues across input methods (keyboard, mouse,
+            and mobile), I redesigned the Notion checkbox to unify behavior and
+            improve clarity, efficiency, and inclusivity.
           </p>
         </div>
 
         {/* Right Side (1/4) */}
         <div className="w-1/4 text-left pl-8">
-          <h3 className="text-2xl font-bold">Contribution</h3>
-          <p>
-            Research, Branding, UX/UI Design, Prototypes, Website Development,
-            Accessible UI Components
-          </p>
-          <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
-          <p>2 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">
-            Websites Used For Case Studies
-          </h3>
-          <ul className="list-disc list-inside">
-            <li>
-              <a
-                href="https://mail.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                https://mail.google.com
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/forms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                https://docs.google.com/forms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.notion.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                https://www.notion.com
-              </a>
-            </li>
-          </ul>
+          <h3 className="text-xl font-bold">Role</h3>
+          <p>UX Designer, Frontend Developer</p>
+          <h3 className="text-xl font-bold mt-4">Duration</h3>
+          <p>2 Weeks, Spring 2025</p>
+          <h3 className="text-xl font-bold mt-4">Tools</h3>
+          <p>Figma, React, TailwindCSS, Framer Motion</p>
         </div>
       </div>
 
@@ -438,64 +394,33 @@ const AccessibleComponents = () => {
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Gmail</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    Mouse/Touchpad interactions prioritize efficiency with
-                    robust bulk selection capabilities and clear visual feedback
-                    systems
-                  </li>
-                  <li>
-                    Limited keyboard accessibility - restricted to "Select All"
-                    functionality with no individual checkbox tab navigation
-                  </li>
-                  <li>
-                    Screen reader experience suffers from confusing focus order
-                    and limited navigation options
-                  </li>
-                  <li>
-                    Mobile interface emphasizes visual appeal with profile
-                    picture to checkmark transformations
-                  </li>
+                  <li>Fast mouse selection with clear visual feedback</li>
+                  <li>Keyboard only supports “Select All,” no tab access</li>
+                  <li>Screen reader flow is unclear and disorienting</li>
+                  <li>Mobile swaps profile pics with checkmarks</li>
                 </ul>
               </div>
 
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Google Forms</h3>
                 <ul className="list-disc pl-6 space-y-2">
+                  <li>Consistent color theming across all states</li>
                   <li>
-                    Implements consistent color theming across all interaction
-                    states for enhanced visual coherence
+                    Keyboard accessible via tab, but spacebar use isn't
+                    intuitive
                   </li>
-                  <li>
-                    Full keyboard accessibility via tab navigation, though uses
-                    counter-intuitive spacebar selection
-                  </li>
-                  <li>
-                    Exemplary screen reader support with detailed state
-                    announcements and context
-                  </li>
-                  <li>
-                    Mobile experience maintains functional and visual parity
-                    with desktop version
-                  </li>
+                  <li>Strong screen reader support with detailed feedback</li>
+                  <li>Mobile mirrors desktop in look and function</li>
                 </ul>
               </div>
 
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Notion</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    Minimalist design approach with effective visual feedback
-                    mechanisms
-                  </li>
-                  <li>
-                    Complete keyboard support with intuitive tab and enter key
-                    functionality
-                  </li>
-                  <li>Mouse-specific animations enhance visual engagement</li>
-                  <li>
-                    Straightforward screen reader implementation with consistent
-                    behavior
-                  </li>
+                  <li>Minimal design with clear visual feedback</li>
+                  <li>Full keyboard support with intuitive tab/enter use</li>
+                  <li>Mouse animations add subtle engagement</li>
+                  <li>Consistent and reliable screen reader behavior</li>
                 </ul>
               </div>
             </div>
@@ -510,66 +435,36 @@ const AccessibleComponents = () => {
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Learnability</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    Google Forms leads in learnability with consistent feedback
-                    and clear required field indicators
-                  </li>
-                  <li>
-                    Gmail offers intuitive mouse interaction but lacks
-                    discoverable keyboard functionality
-                  </li>
-                  <li>
-                    Notion's simplified approach aids initial learning but may
-                    hide advanced features
-                  </li>
+                  <li>Forms: clear feedback and field indicators</li>
+                  <li>Gmail: intuitive mouse use, weak keyboard flow</li>
+                  <li>Notion: simple start, hides advanced tools</li>
                 </ul>
               </div>
 
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Memorability</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    Notion excels with consistent cross-platform behavior
-                    reducing cognitive load
-                  </li>
-                  <li>
-                    Google Forms leverages color theming to reinforce state
-                    memory
-                  </li>
-                  <li>
-                    Gmail's platform-specific behaviors may increase cognitive
-                    burden
-                  </li>
+                  <li>Notion: consistent across platforms</li>
+                  <li>Forms: color helps reinforce actions</li>
+                  <li>Gmail: inconsistent behavior increases load</li>
                 </ul>
               </div>
 
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Efficiency</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Gmail optimizes for mouse-based bulk operations</li>
-                  <li>
-                    Google Forms provides efficient keyboard navigation despite
-                    spacebar requirement
-                  </li>
-                  <li>
-                    Notion achieves balanced efficiency across all interaction
-                    methods
-                  </li>
+                  <li>Gmail: great for bulk actions (mouse)</li>
+                  <li>Forms: fast keyboard use (spacebar required)</li>
+                  <li>Notion: equally smooth across all inputs</li>
                 </ul>
               </div>
 
               <div className="flex-1 border bg-white border-gray-300 rounded-lg p-4 shadow-md">
                 <h3 className="text-lg font-semibold mb-2">Best Practices</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Gmail: Superior visual feedback for selection states</li>
-                  <li>
-                    Google Forms: Comprehensive accessibility and screen reader
-                    support
-                  </li>
-                  <li>
-                    Notion: Consistent cross-platform experience with minimal
-                    cognitive overhead
-                  </li>
+                  <li>Gmail: strong visual state feedback</li>
+                  <li>Forms: top-tier accessibility support</li>
+                  <li>Notion: clean, low-friction interaction</li>
                 </ul>
               </div>
             </div>
@@ -661,7 +556,7 @@ const AccessibleComponents = () => {
               </h2>
 
               <div className="pl-8">
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                <p className="text-lg text-gray-700 leading-relaxed text-left mb-8">
                   A closer look at the interaction model reveals several
                   usability challenges that disrupt user flow and create
                   inconsistencies in expected behavior. These issues impact both
@@ -670,59 +565,69 @@ const AccessibleComponents = () => {
                 </p>
 
                 {/* Mouse/Trackpad Interaction */}
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md mb-8">
+                <div className="bg-[#E4EFFA] p-6 rounded-xl shadow-md mb-8">
                   <h3 className="text-2xl font-semibold mb-4">
                     Mouse/Trackpad Interaction
                   </h3>
-                  <p className="text-gray-800 leading-relaxed text-left">
-                    Currently, hovering over the property field triggers two
-                    separate hover effects, leading to unnecessary visual
-                    clutter. Additionally, when clicking on the field, the hover
-                    dissapers even if the users mouse is still over it.
-                  </p>
+                  <ul className="list-disc list-inside text-gray-800 space-y-2 text-left">
+                    <li>
+                      Two hover effects appear when hovering, causing visual
+                      clutter.
+                    </li>
+                    <li>
+                      Clicking removes hover state, even if the mouse remains
+                      over the element.
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Keyboard Interaction */}
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md mb-8">
+                <div className="bg-[#E4EFFA] p-6 rounded-xl shadow-md mb-8">
                   <h3 className="text-2xl font-semibold mb-4">
                     Keyboard Interaction
                   </h3>
-                  <p className="text-gray-800 leading-relaxed text-left">
-                    The tab key initially highlights the entire property field,
-                    allowing users to press{" "}
-                    <span className="font-medium">Return</span> or{" "}
-                    <span className="font-medium">Space</span> to toggle the
-                    checkbox. However, pressing tab again moves focus directly
-                    to the checkbox, where only the{" "}
-                    <span className="font-medium">Space</span> key works. This
-                    inconsistency makes navigation confusing and reduces
-                    efficiency.
-                  </p>
+                  <ul className="list-disc list-inside text-gray-800 space-y-2 text-left">
+                    <li>
+                      Tab highlights the full property field, where both{" "}
+                      <span className="font-medium">Return</span> and{" "}
+                      <span className="font-medium">Space</span> work.
+                    </li>
+                    <li>
+                      Tabbing again focuses only on the checkbox, where only{" "}
+                      <span className="font-medium">Space</span> works—causing
+                      inconsistency.
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Overall Usability Considerations */}
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md">
+                <div className="bg-[#E4EFFA] p-6 rounded-xl shadow-md mb-8">
                   <h3 className="text-2xl font-semibold mb-4">
                     Overall Usability Considerations
                   </h3>
-                  <p className="text-gray-800 leading-relaxed text-left">
-                    These inconsistencies create unnecessary cognitive load,
-                    making it difficult for users to develop a predictable
-                    mental model. Multiple hover effects add noise, while
-                    unpredictable toggling behavior results in unintended
-                    actions.
-                    <span className="block mt-2 font-medium text-gray-700">
-                      Suggested Improvements:
-                    </span>
-                  </p>
-                  <ul className="list-disc list-inside text-gray-800 mt-2 ml-4 space-y-2 text-left">
+                  <ul className="list-disc list-inside text-gray-800 space-y-2 text-left">
+                    <li>Multiple hover states add noise and cognitive load.</li>
                     <li>
-                      Streamline hover effects to remove redundancy and improve
-                      visual clarity.
+                      Inconsistent behavior makes the interaction feel
+                      unpredictable.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Suggested Improvements (Standalone Section) */}
+                <div className="border-4 border-[#E4EFFA] p-6 rounded-xl">
+                  <h3 className="text-2xl font-semibold mb-4">
+                    Suggested Improvements
+                  </h3>
+                  <ul className="list-disc list-inside text-gray-800 space-y-2 text-left">
+                    <li>
+                      Unify hover behavior to reduce clutter and improve
+                      clarity.
                     </li>
                     <li>
-                      Ensure keyboard navigation follows a consistent logic,
-                      allowing both Return and Space to toggle checkboxes.
+                      Ensure <span className="font-medium">Return</span> and{" "}
+                      <span className="font-medium">Space</span> both toggle
+                      checkboxes consistently.
                     </li>
                   </ul>
                 </div>
@@ -741,25 +646,30 @@ const AccessibleComponents = () => {
                     Redesigned Mouse/Trackpad Interaction Model
                   </h3>
                   <ul className="text-sm text-gray-600 mt-2 list-disc list-outside pl-6">
-                    <li>
-                      Initially, the mouse and trackpad interaction had two
-                      separate hover states, which caused unnecessary confusion
-                      since there was no functional difference between them.
-                    </li>
-                    <li>
-                      To improve clarity, I consolidated these into a single
-                      hover state.
-                    </li>
-                    <li>
-                      I also implemented a swipe-to-check feature, allowing
-                      users to quickly check off multiple items with a simple
-                      gesture.
-                    </li>
-                    <li>
-                      This enhancement improves efficiency and provides a
-                      smoother experience for users managing several selections
-                      at once.
-                    </li>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>
+                        Consolidated two redundant hover states
+                        <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                          <li>
+                            Introduced clarity by removing visual confusion.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Added swipe-to-check interaction
+                        <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                          <li>Enables quick selection of multiple items.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Streamlined multi-item interaction
+                        <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                          <li>
+                            Boosts efficiency and improves overall experience.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
                 <div
@@ -785,26 +695,28 @@ const AccessibleComponents = () => {
                   </h3>
                   <ul className="text-sm text-gray-600 mt-2 list-disc list-outside pl-6">
                     <li>
-                      In the original keyboard interaction model, users could
-                      focus on the entire property field and check/uncheck the
-                      box using both the <kbd>Return </kbd>
-                      and <kbd>Space</kbd> keys.
+                      Dual focus paths caused inconsistency
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>
+                          <kbd>Return</kbd> and <kbd>Space</kbd> worked in one
+                          state, only <kbd>Space</kbd> in the other.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      However, users could also separately focus on the checkbox
-                      itself, where only the <kbd>Space</kbd> key would
-                      work—leading to confusion.
+                      Redundant hover states added complexity
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>Users couldn’t form a clear interaction model.</li>
+                      </ul>
                     </li>
                     <li>
-                      Additionally, having two different hover states added
-                      unnecessary complexity and made it unclear how the
-                      interaction was supposed to work.
-                    </li>
-                    <li>
-                      To simplify this, I adjusted the model to use a single
-                      hover state and ensured that both the <kbd>Return</kbd>{" "}
-                      and <kbd>Space</kbd> keys consistently toggle the
-                      checkbox, regardless of focus.
+                      Updated model for consistency and clarity
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>
+                          Unified hover and allowed both <kbd>Return</kbd> and{" "}
+                          <kbd>Space</kbd> in all cases.
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -831,18 +743,26 @@ const AccessibleComponents = () => {
                   </h3>
                   <ul className="text-sm text-gray-600 mt-2 list-disc list-outside pl-6">
                     <li>
-                      I introduced a Redesigned Mobile Interaction Model to
-                      enhance usability for mobile users.
+                      Introduced a mobile-first interaction model
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>
+                          Focused on enhancing usability for mobile users.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      The primary reason for adding a swiping feature was to
-                      align with the natural interactions of mobile devices,
-                      where swiping is a primary gesture.
+                      Added swipe gesture support
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>
+                          Aligned with native mobile behavior for familiarity.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      With this new model, users can now check or uncheck a box
-                      by either tapping or swiping, providing a more intuitive
-                      and flexible experience.
+                      Enabled flexible input
+                      <ul className="list-disc pl-6 text-sm text-[#2483E2]">
+                        <li>Users can tap or swipe to toggle checkboxes.</li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -1086,59 +1006,44 @@ const AccessibleComponents = () => {
       <section className="w-full flex flex-col p-14 bg-[#E4EFFA] bg-opacity-70">
         <h2 className="text-3xl font-bold mb-6">Reflection</h2>
         <p className="text-sm text-gray-600 mb-6">
-          In her work, Kat Holmes emphasizes the importance of inclusive design
-          not just as a solution for specific health conditions but as a tool to
-          address mismatches—moments when design fails to meet diverse user
-          needs. By observing how the components in my design interact with
-          various users, I noticed several areas where usability and
-          accessibility can be improved.
+          This project helped me better understand how subtle design decisions
+          shape usability and accessibility across different input methods.
+          Observing user behavior revealed where components fell short—and how
+          small changes could make a big impact.
+        </p>
+        <p className="text-gray-600 mt-2 list-disc list-outside pl-6 text-left">
+          Key takeaways:
         </p>
         <ul className="text-gray-600 mt-2 list-disc list-outside pl-6 text-left">
           <li className="py-2">
-            The mouse, trackpad, and mobile swipe feature addresses a
-            fundamental mismatch by offering a more intuitive way for users to
-            interact with checkboxes. In my design, I've made sure the
-            checkboxes can be activated via both mouse/trackpad clicks and
-            swiping, which helps users who prefer touch-based input methods.
+            <span className="font-semibold text-[#2483E2]">
+              Accessibility-first mindset:
+            </span>
+            <br />
+            Learned to support keyboard, mouse, and touch interactions equally.
           </li>
           <li className="py-2">
-            The previous design only accounted for the keyboard and mouse, which
-            could alienate mobile users who rely on swiping. In contrast, the
-            updated design ensures that all users, including those on mobile,
-            have an easy and consistent way to check or uncheck boxes.
+            <span className="font-semibold text-[#2483E2]">
+              Interaction details matter:
+            </span>
+            <br />
+            Hover states, focus feedback, and small transitions change how users
+            feel.
           </li>
           <li className="py-2">
-            The change I made solves a mismatch by offering a uniform
-            interaction model for all types of devices, removing the barriers
-            between traditional input methods and new mobile-friendly gestures.
-            This ensures users of all abilities, including those with limited
-            motor skills, can interact with the design smoothly.
+            <span className="font-semibold text-[#2483E2]">
+              Responsive by design:
+            </span>
+            <br />
+            Built fluid layouts that adapt across screen sizes without breaking.
           </li>
           <li className="py-2">
-            In my design, one example of accessibility impact is for users with
-            limited motor skills who would find it difficult to interact with a
-            small clickable area using a mouse. This would negatively affect
-            their experience, whereas the swipe gesture on mobile provides a
-            larger and more forgiving interaction method.
-          </li>
-          <li className="py-2">
-            A positive impact of accessibility is seen for keyboard-only users.
-            They can now easily navigate through checkboxes using both the space
-            and return keys, improving usability without needing a mouse or
-            trackpad.
-          </li>
-          <li className="py-2">
-            Mouse and keyboard users are typically prioritized in design, as
-            these are the most common input devices. However, this can
-            inadvertently disadvantage users who rely on touch-based or
-            voice-controlled interfaces, leading to a mismatch in the user
-            experience for these groups.
-          </li>
-          <li className="py-2">
-            The new model I introduced seeks to combat these mismatches by
-            making the design more inclusive, ensuring that no matter the input
-            method, users can interact with the interface seamlessly and
-            effectively.
+            <span className="font-semibold text-[#2483E2]">
+              Inclusive design is foundational:
+            </span>
+            <br />
+            Accessibility shouldn’t be an add-on—it should shape the component
+            from the start.
           </li>
         </ul>
       </section>

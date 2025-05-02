@@ -33,7 +33,7 @@ const topics = [
   "How do users define success?",
   "What frustrates users?",
   "What goals do users have?",
-  "What influences users’ actions?",
+  "What influences users' actions?",
   "How do users solve problems?",
   "What tools do users prefer?",
   "What makes users trust a product?",
@@ -105,7 +105,7 @@ const PersonasAndStoryboarding = () => {
         "--color-dark": colors.dark,
         "--color-text": colors.text,
       }}
-      className="w-full text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
+      className="w-full font-wix text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
     >
       {/* Fullscreen Image Modal */}
       {selectedImage && (
@@ -167,110 +167,41 @@ const PersonasAndStoryboarding = () => {
         </div>
       </section>
 
-      {/* Project Description */}
+      {/* Overview Section */}
       <section className="w-full flex flex-row py-16 px-14 bg-[var(--color-light)]">
         {/* Left Side (3/4) */}
         <div className="w-3/4 text-left">
-          <h2 className="text-3xl font-bold">
-            Personas and Storyboarding: The Tipping Interface
+          <h2 className="text-4xl font-bold mb-2 text-[var(--color-dark)]">
+            Personas & Storyboarding: The Tipping Interface
           </h2>
-          <p className="mt-8 mb-4">
-            Interfaces are crucial because they serve as the primary point of
-            interaction between users and systems, enabling users to access and
-            utilize the functionality of digital tools or services. Good
-            interfaces are intuitive, user-friendly, and efficient, which leads
-            to better user experiences and outcomes. Tipping interfaces, in
-            particular, are interesting because they involve users making quick
-            financial decisions in a brief interaction, often without much prior
-            thought. The design of these interfaces can influence whether users
-            tip, how much they tip, and the overall satisfaction with the
-            experience.
-          </p>
-          <p className="my-4">
-            Tipping interfaces also come with specific user expectations. Users
-            typically expect the process to be straightforward and easy. If the
-            interface is confusing or lacks clarity, it can create frustration.
-            Conversely, if the interface is too forceful or manipulative, it may
-            make users uncomfortable, affecting their perception of the brand or
-            service. Additionally, tipping is often guided by social norms and
-            expectations, meaning that the tipping interface must strike a
-            balance between encouraging users to tip and avoiding excessive
-            pressure. Poor design can amplify this social pressure, while a
-            well-designed interface gives users the freedom to make their own
-            decisions comfortably.
-          </p>
-          <p className="my-4">
-            Another important factor is the speed and convenience of the tipping
-            process. In fast-paced environments like cafes or takeout services,
-            tipping interfaces need to allow users to make decisions quickly
-            without disrupting the flow of their transaction. Moreover,
-            personalization in tipping interfaces can be beneficial, as they can
-            take into account users' past behavior or preferences, helping to
-            reduce friction and enhance the experience. Finally, tipping
-            involves emotional and social components, and a thoughtful interface
-            can evoke a positive emotional response from users. A well-designed
-            tipping interface that considers both functional and emotional
-            elements will lead to a better overall user experience, ultimately
-            contributing to a positive perception of the brand or service.
+          <p className="text-xl mb-8">
+            Observing real users at Kung Fu Tea to uncover pain points and build
+            data-driven personas for a more intuitive tipping interface.
           </p>
 
-          <p className="my-4">
-            In this project, I observed real users interacting with the tipping
-            interface at Kung Fu Tea. The goal was to understand the user
-            experience, identify pain points, and construct personas and
-            storyboards that illustrate the typical user journey. By observing
-            real-life interactions and conducting unbiased interviews, I gained
-            valuable insights into user motivations, decision-making, and
-            potential challenges with the interface. These observations were
-            instrumental in helping me develop personas—archetypical
-            representations of the users based on empirical data. Personas are
-            essential in UX design because they provide a deeper understanding
-            of user behavior, goals, and needs.
+          <p className="mb-4">
+            I observed how users interacted with the tipping interface at Kung
+            Fu Tea to identify pain points and behavioral patterns. Based on
+            these findings, I developed personas and storyboards to highlight
+            key usability challenges and opportunities for a smoother, more
+            respectful tipping experience.
           </p>
         </div>
 
         {/* Right Side (1/4) */}
-        <div className="w-1/4 text-left pl-8">
-          <h3 className="text-2xl font-bold">Contribution</h3>
-          <p>
-            Research, Branding, UX/UI Design, Prototypes, Website Development,
-            Accessible UI Components
-          </p>
-          <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
-          <p>2 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">Research Refences</h3>
-          <ul className="list-disc list-inside">
-            <li>
-              <a
-                href="https://drive.google.com/file/d/18TK0ywaEYr1pUFQITFBo1faqVTzgxB-T/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Cooper - Personas in UX Design
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://www.cs.cmu.edu/~jhm/Readings/Dillman,%20Chapter%204.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Dillman - Crafting Good Questions
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://uxplanet.org/storyboarding-in-ux-design-b9d2e18e5fab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Babich - Storyboarding for UI/UX
-              </a>
-            </li>
-          </ul>
+        <div className="w-1/4 text-left pl-8 space-y-4">
+          <div>
+            <h3 className="text-xl font-bold">Role</h3>
+            <p>UX Researcher, Interaction Designer</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Duration</h3>
+            <p>2 Weeks, Spring 2025</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Tools</h3>
+            <p>Figma, Google Docs, Storyboard Templates</p>
+          </div>
         </div>
       </section>
 
@@ -343,30 +274,29 @@ const PersonasAndStoryboarding = () => {
 
               {/* Problem & Key Components Section */}
               <section id="problem-key-components">
-                <h2 className="text-xl font-bold mt-8 pt-4 text-[var(--color-medium)]">
+                <h2 className="text-xl font-bold mt-8 pt-4">
                   The Problem & How the Interface Works
                 </h2>
+
                 <p className="mt-4 mb-6">
-                  The tipping interface is designed to solve the problem of
-                  encouraging gratuity in cashless transactions. As digital
-                  payments become the norm, customers are less likely to carry
-                  cash, making it harder for service workers to receive tips.
-                  The interface simplifies the tipping process by presenting
-                  preset tip amounts, reducing friction and making it easy for
-                  users to make quick decisions.
+                  As digital payments replace cash, it's harder for service
+                  workers to receive tips. This interface aims to solve that by
+                  making tipping quick and easy through{" "}
+                  <span className="font-bold">preset options</span> that reduce
+                  friction and encourage action.
                 </p>
 
                 <p className="mb-6">
-                  The interface typically includes a few key components:
-                  <strong> preset tipping options </strong> (e.g., 10%, 15%,
-                  20%), a <strong> “No Tip” button</strong> for those who choose
-                  not to tip, and a<strong> custom tip entry </strong> for users
-                  who prefer to set their own amount. These elements are
-                  designed to streamline decision-making, but they also
-                  introduce potential biases—such as social pressure to tip or
-                  the default options influencing user behavior. Understanding
-                  how users interact with these features is crucial to
-                  evaluating the effectiveness and fairness of the interface.
+                  Core components include{" "}
+                  <span className="font-bold">preset tip amounts</span> (10%,
+                  15%, 20%), a <span className="font-bold">“No Tip”</span>{" "}
+                  button, and <span className="font-bold">custom input</span>.
+                  {""}
+                  <span className="bg-[var(--color-light)] text-black px-1 rounded">
+                    These elements can introduce social pressure and bias
+                  </span>
+                  , making it essential to understand how users interact with
+                  each feature.
                 </p>
               </section>
 
@@ -374,97 +304,62 @@ const PersonasAndStoryboarding = () => {
                 Interview Questions
               </h2>
               <p className="mt-4 mb-6">
-                To gain deeper insights into the user experience, I developed a
-                set of objective questions. These questions explore user
-                expectations, experiences, decision-making, and potential
-                challenges encountered when interacting with the tipping
+                I created a set of interview questions to better understand user
+                behavior, expectations, and friction points within the tipping
                 interface.
               </p>
 
-              <ul className="list-disc pl-5 space-y-3">
-                <li>
-                  <strong>General Experience with the Interface</strong>
-                  <ul className="list-none pl-4">
-                    <li>
-                      1. Can you walk me through your typical experience when
-                      paying at Kung Fu Tea?
-                    </li>
-                    <li>
-                      2. What are your thoughts when you see the tipping screen
-                      after making a purchase?
-                    </li>
-                    <li>3. How do you decide whether or not to leave a tip?</li>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-[var(--color-light)] p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 text-[var(--color-heading)]">
+                    General Experience
+                  </h3>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Walk me through a typical checkout experience.</li>
+                    <li>What do you think when the tipping screen appears?</li>
                   </ul>
-                </li>
+                </div>
 
-                <li>
-                  <strong>Expectations vs. Reality</strong>
-                  <ul className="list-none pl-4">
-                    <li>
-                      4. Before seeing the tipping screen, do you expect to have
-                      a tipping option? Why or why not?
-                    </li>
-                    <li>
-                      5. How does your actual experience with the tipping
-                      interface compare to your expectations?
-                    </li>
+                <div className="bg-[var(--color-light)] p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 text-[var(--color-heading)]">
+                    Expectations vs. Reality
+                  </h3>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Did you expect a tipping prompt?</li>
+                    <li>How did the actual experience compare?</li>
                   </ul>
-                </li>
+                </div>
 
-                <li>
-                  <strong>Motivations & Decision-Making</strong>
-                  <ul className="list-none pl-4">
-                    <li>
-                      6. What factors influence your tipping decision (e.g.,
-                      service quality, social pressure, default percentages)?
-                    </li>
-                    <li>
-                      7. Do you feel any pressure to tip when using the
-                      interface? Why or why not?
-                    </li>
-                    <li>
-                      8. Have you ever chosen “No Tip”? If so, what was your
-                      thought process at that moment?
-                    </li>
+                <div className="bg-[var(--color-light)] p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 text-[var(--color-heading)]">
+                    Motivations & Pressure
+                  </h3>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>What influences your tipping decision?</li>
+                    <li>Have you ever felt pressured to tip?</li>
                   </ul>
-                </li>
+                </div>
 
-                <li>
-                  <strong>Challenges & Friction Points</strong>
-                  <ul className="list-none pl-4">
-                    <li>
-                      9. Have you ever experienced confusion or frustration with
-                      the tipping interface? Can you describe what happened?
-                    </li>
-                    <li>
-                      10. Do you feel the interface gives you enough time to
-                      make a decision? Why or why not?
-                    </li>
-                    <li>
-                      11. How do you feel about the preset tip percentages? Do
-                      they influence your choice?
-                    </li>
+                <div className="bg-[var(--color-light)] p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 text-[var(--color-heading)]">
+                    Friction Points
+                  </h3>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Have you ever been confused by the interface?</li>
+                    <li>Do you feel rushed when tipping?</li>
                   </ul>
-                </li>
+                </div>
 
-                <li>
-                  <strong>Final Thoughts</strong>
-                  <ul className="list-none pl-4">
-                    <li>
-                      12. If you could change anything about the tipping
-                      interface, what would it be?
-                    </li>
-                    <li>
-                      13. How does this tipping experience compare to tipping in
-                      other settings, such as restaurants or delivery apps?
-                    </li>
-                    <li>
-                      14. Do you think digital tipping interfaces like this
-                      impact how often people tip? Why?
-                    </li>
+                <div className="bg-[var(--color-light)] p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 text-[var(--color-heading)]">
+                    Final Thoughts
+                  </h3>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>If you could change one thing, what would it be?</li>
+                    <li>How does this compare to tipping in other settings?</li>
                   </ul>
-                </li>
-              </ul>
+                </div>
+              </div>
             </section>
 
             {/* Section 2 */}
@@ -474,17 +369,10 @@ const PersonasAndStoryboarding = () => {
               </h1>
 
               <p className="mt-4 mb-6">
-                I conducted my observations and interviews at midday in Kung Fu
-                Tea, a busy time when many students and locals stop in for a
-                quick drink. Given the nature of Thayer Street and College Hill,
-                I anticipated that most customers would be students or young
-                professionals accustomed to digital payment methods. My goal was
-                to objectively observe their interactions with the tipping
-                interface, noting any patterns, hesitations, or challenges. To
-                ensure ethical and non-intrusive observations, I sought
-                permission before conducting interviews and maintained a
-                respectful distance when users interacted with the payment
-                screen.
+                I conducted user observations and interviews at midday in Kung
+                Fu Tea during peak hours. My goal was to objectively observe
+                tipping behavior while maintaining ethical, non-intrusive
+                distance.
               </p>
 
               <h2 className="text-xl font-bold mt-8 pt-4 text-[var(--color-medium)]">
@@ -522,57 +410,58 @@ const PersonasAndStoryboarding = () => {
                 </li>
               </ul>
 
-              <p className="mt-4">
-                These observations suggest that the tipping interface plays a
-                subtle yet influential role in user behavior. While the
-                interface itself is functional, external factors such as social
-                dynamics, tipping norms, and time constraints affect how users
-                engage with it.
+              <p className="mt-6">
+                These findings suggest that while the interface functions well,{" "}
+                <span className="font-semibold">external factors</span>—like
+                social dynamics and time pressure—play a big role in tipping
+                behavior.
               </p>
 
               <h2 className="text-xl font-semibold mt-8 pt-4 text-[var(--color-medium)]">
-                User Summaries
+                User Snapshots
               </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                {/* User 1 */}
+                <div className="bg-[var(--color-light)] p-4 rounded-md shadow-sm">
+                  <h4 className="text-lg font-semibold mb-2">User 1</h4>
+                  <p className="text-sm">
+                    Tips out of <span className="font-semibold">habit</span>{" "}
+                    using preset amounts. Tends to tip more after{" "}
+                    <span className="font-semibold">positive service</span>. Not
+                    affected by the interface but aware of others watching.
+                  </p>
+                </div>
 
-              <h4 className="text-lg font-semibold mt-4">User 1</h4>
-              <p className="mt-2">
-                This user visits Kung Fu Tea regularly and is familiar with the
-                payment process. They mentioned that they "usually tip out of
-                habit" and always select one of the preset percentages. However,
-                they tend to tip more when they receive exceptional service,
-                such as a friendly greeting or a customized drink request. They
-                did not feel pressured by the interface but acknowledged that
-                the presence of other customers might influence tipping
-                decisions.
-              </p>
+                {/* User 2 */}
+                <div className="bg-[var(--color-light)] p-4 rounded-md shadow-sm">
+                  <h4 className="text-lg font-semibold mb-2">User 2</h4>
+                  <p className="text-sm">
+                    Often chooses{" "}
+                    <span className="font-semibold">“No Tip”</span> but feels{" "}
+                    <span className="font-semibold">guilty</span> doing so.
+                    Wants more transparency around how tips are distributed.
+                    Views counter service differently than dining.
+                  </p>
+                </div>
 
-              <h4 className="text-lg font-semibold mt-4">User 2</h4>
-              <p className="mt-2">
-                This user was uncertain about tipping and admitted they
-                sometimes feel guilty if they choose "No Tip." They typically
-                chose no tip. They appreciated the ease of selecting a preset
-                percentage but wished there was more transparency about how tips
-                are distributed. They also mentioned that tipping expectations
-                vary by service type, and they tip less for counter-service
-                transactions than full-service dining.
-              </p>
-
-              <h4 className="text-lg font-semibold mt-4">User 3</h4>
-              <p className="mt-2">
-                This user consistently chooses "No Tip" and does not feel
-                obligated to tip at Kung Fu Tea. They view tipping as something
-                reserved for table service rather than quick-service
-                establishments. However, they acknowledged that the placement of
-                the tipping screen makes declining a tip slightly uncomfortable,
-                as it feels more visible to the cashier and other customers.
-              </p>
+                {/* User 3 */}
+                <div className="bg-[var(--color-light)] p-4 rounded-md shadow-sm">
+                  <h4 className="text-lg font-semibold mb-2">User 3</h4>
+                  <p className="text-sm">
+                    Never tips and sees it as unnecessary for quick service.
+                    Finds the placement of the tipping screen a bit{" "}
+                    <span className="font-semibold">uncomfortable</span> due to
+                    visibility to others.
+                  </p>
+                </div>
+              </div>
 
               <p className="mt-6">
-                These user perspectives provide a broad spectrum of attitudes
-                toward tipping, highlighting key themes of habit, social
-                pressure, and transparency in digital tipping interfaces. These
-                insights directly informed the development of the two personas
-                in the next section.
+                These user perspectives revealed themes of{" "}
+                <span className="font-semibold">habit</span>,{" "}
+                <span className="font-semibold">social pressure</span>, and{" "}
+                <span className="font-semibold">transparency</span>, which
+                informed the personas developed in the next section.
               </p>
             </section>
 
@@ -581,136 +470,104 @@ const PersonasAndStoryboarding = () => {
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Personas
               </h1>
-
               <p className="mt-4 mb-6">
-                Based on my observations and interviews, I created two personas
-                that represent key user behaviors and attitudes toward the Kung
-                Fu Tea tipping interface. Each persona is based on overarching
-                trends, rather than a single individual, and captures distinct
-                user motivations, frustrations, and decision-making processes.
+                Based on interviews and observations, I created two personas
+                representing distinct user types. Each one captures different
+                motivations, expectations, and frustrations around the tipping
+                interface.
               </p>
 
-              <div className="flex gap-8 mt-8">
-                {/* Persona 1 */}
-                <div className="flex-1">
+              <div className="flex flex-col md:flex-row gap-8 mt-8">
+                {/* Persona 1: Jordan */}
+                <div className="flex-1 border-4 border-[var(--color-light)] p-6 rounded-lg shadow-sm">
                   <h2 className="text-2xl font-bold text-[var(--color-medium)]">
-                    Persona 1: Jordan Patel
+                    Jordan Patel
                   </h2>
-                  <h3 className="text-xl font-semibold mt-2">
-                    "A service worker who understands tipping culture and wants
-                    control over their choices."
+                  <h3 className="text-lg italic mb-4">
+                    “A thoughtful tipper who wants fairness and control.”
                   </h3>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
+                  <div className="text-sm mb-4">
+                    <p>
                       <strong>Age:</strong> 22
-                    </li>
-                    <li>
-                      <strong>Occupation:</strong> Part-Time Barista & Student
-                    </li>
-                    <li>
-                      <strong>Boba Order:</strong> Medium Matcha Latte, Light
-                      Ice, Oat Milk
-                    </li>
+                    </p>
+                    <p>
+                      <strong>Occupation:</strong> Barista & Student
+                    </p>
+                    <p>
+                      <strong>Order:</strong> Matcha Latte, Oat Milk
+                    </p>
+                  </div>
+                  <h4 className="font-semibold mb-2">
+                    Interface Frustrations:
+                  </h4>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Prefers custom tips over preset options</li>
+                    <li>Feels nudged without explanation for tipping</li>
+                    <li>Wants more control over when/how to tip</li>
+                    <li>Finds the custom tip input too slow</li>
                   </ul>
-                  <h3 className="text-lg font-semibold mt-4">
-                    Interface Problems for Jordan:
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
-                      Preset tip options feel manipulative—they prefer entering
-                      their own amount.
-                    </li>
-                    <li>
-                      The interface doesn't explain why tipping is expected at a
-                      boba shop.
-                    </li>
-                    <li>Lack of control over how and when to tip.</li>
-                    <li>
-                      Friction in the custom tip process makes quick tipping
-                      harder.
-                    </li>
-                  </ul>
-                  <p className="mt-4">
-                    Jordan represents conscious tippers who value fair tipping
-                    but dislike feeling nudged. Their experience highlights the
-                    ethics and psychology of digital tipping and how interface
-                    design influences behavior.
+                  <p className="mt-4 text-sm">
+                    Jordan represents users who support tipping but are critical
+                    of digital nudging. Their feedback highlights issues of
+                    autonomy and transparency in interface design.
                   </p>
-                  <div
-                    className="w-2/3 mx-auto flex justify-center items-center cursor-pointer"
-                    onClick={() =>
-                      setSelectedImage(
-                        "/images/personas and storyboarding/JordanEmpathyMap.png"
-                      )
-                    }
-                  >
+                  <div className="w-full flex justify-center mt-4">
                     <img
                       src="/images/personas and storyboarding/JordanEmpathyMap.png"
                       alt="Empathy map for Jordan Patel"
-                      className="mt-4 h-[500px] max-w-[500px] rounded-lg justify-center transform transition-transform duration-300 hover:scale-105"
+                      className="h-[400px] rounded-md cursor-pointer hover:scale-105 transition-transform"
+                      onClick={() =>
+                        setSelectedImage(
+                          "/images/personas and storyboarding/JordanEmpathyMap.png"
+                        )
+                      }
                     />
                   </div>
                 </div>
 
-                {/* Persona 2 */}
-                <div className="flex-1">
+                {/* Persona 2: Alex */}
+                <div className="flex-1 border-4 border-[var(--color-light)] p-6 rounded-lg shadow-sm">
                   <h2 className="text-2xl font-bold text-[var(--color-medium)]">
-                    Persona 2: Alex Chen
+                    Alex Chen
                   </h2>
-                  <h3 className="text-xl font-semibold mt-2">
-                    "A busy college student who grabs boba often and wants a
-                    smooth checkout experience."
+                  <h3 className="text-lg italic mb-4">
+                    “A busy student who wants speed and minimal wait.”
                   </h3>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
+                  <div className="text-sm mb-4">
+                    <p>
                       <strong>Age:</strong> 20
-                    </li>
-                    <li>
-                      <strong>Occupation:</strong> College Student
-                    </li>
-                    <li>
-                      <strong>Boba Order:</strong> Large Thai Milk Tea with Boba
-                    </li>
+                    </p>
+                    <p>
+                      <strong>Occupation:</strong> Student
+                    </p>
+                    <p>
+                      <strong>Order:</strong> Thai Milk Tea with Boba
+                    </p>
+                  </div>
+                  <h4 className="font-semibold mb-2">
+                    Interface Frustrations:
+                  </h4>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Wants a faster, less disruptive checkout</li>
+                    <li>Feels nudged by default tip percentages</li>
+                    <li>Social pressure impacts tipping choices</li>
+                    <li>Not enough time to think before tapping</li>
                   </ul>
-                  <h3 className="text-lg font-semibold mt-4">
-                    Interface Problems for Alex:
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
-                      The tipping screen feels intrusive when they just want a
-                      quick purchase.
-                    </li>
-                    <li>
-                      The default options encourage tipping, even if they don't
-                      feel it's necessary.
-                    </li>
-                    <li>
-                      The social pressure of being watched influences their
-                      decision.
-                    </li>
-                    <li>
-                      They lack control over the experience—it's too quick to
-                      think critically.
-                    </li>
-                  </ul>
-                  <p className="mt-4">
-                    Alex represents the typical college student who visits Kung
-                    Fu Tea often and just wants a fast, easy checkout. Their
-                    experience highlights the habitual and social aspects of
-                    tipping, rather than a deeply considered decision.
+                  <p className="mt-4 text-sm">
+                    Alex reflects the fast-moving, frequent customer who values
+                    convenience. Their responses reveal how digital tipping can
+                    feel performative or intrusive.
                   </p>
-                  <div
-                    className="w-2/3 mx-auto flex justify-center items-center cursor-pointer"
-                    onClick={() =>
-                      setSelectedImage(
-                        "/images/personas and storyboarding/AlexEmpathyMap.png"
-                      )
-                    }
-                  >
+                  <div className="w-full flex justify-center mt-4">
                     <img
                       src="/images/personas and storyboarding/AlexEmpathyMap.png"
                       alt="Empathy map for Alex Chen"
-                      className="mt-4 h-[500px] max-w-[500px] rounded-lg justify-center transform transition-transform duration-300 hover:scale-105"
+                      className="h-[400px] rounded-md cursor-pointer hover:scale-105 transition-transform"
+                      onClick={() =>
+                        setSelectedImage(
+                          "/images/personas and storyboarding/AlexEmpathyMap.png"
+                        )
+                      }
                     />
                   </div>
                 </div>

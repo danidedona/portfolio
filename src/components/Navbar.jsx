@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const colors = {
   grey: "#D9D9D9",
-  pink: "#F6A6B9",
+  pink: "#9e008c",
   bg: "rgba(252, 248, 243, 0.7)",
 };
 
@@ -62,9 +62,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Left - Logo */}
-        <div className="w-10 h-10 rounded-full bg-[var(--color-grey)] text-black flex items-center justify-center text-lg">
+        <a
+          href="/"
+          className="w-10 h-10 rounded-full bg-[var(--color-grey)] text-black flex items-center justify-center text-lg hover:bg-[var(--color-pink)] transition duration-200"
+        >
           DD
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-gray-800 font-medium">
