@@ -33,7 +33,7 @@ export default function Navbar() {
       <Link to="/">Work</Link>
       <Link to="/about">About</Link>
       <Link
-        to="https://drive.google.com/..."
+        to="https://drive.google.com/file/d/1mJU6puezVxKsrLDR0v6mqR2SRt5HKWTU/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
