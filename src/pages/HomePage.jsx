@@ -1,8 +1,3 @@
-import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import ProjectGrid from "../components/ProjectGrid";
 
 const colors = {
@@ -12,10 +7,6 @@ const colors = {
 };
 
 function HomePage() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
   return (
     <div
       style={{
